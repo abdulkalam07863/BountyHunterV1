@@ -1,0 +1,6 @@
+ Volume in drive D is SoftData
+ Volume Serial Number is D0C3-3208
+
+ Directory of D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools
+
+File Not Found

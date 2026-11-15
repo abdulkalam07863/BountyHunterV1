@@ -1,0 +1,105 @@
+workspace_root: "D:\\BugBounty"
+fallback_root: "C:\\BugBounty"
+
+max_concurrency: 6
+request_timeout: 25
+rate_limit_rps: 1.5
+user_agent: "bountyhunter/1.1 (security-research)"
+
+keywords:
+  - bug bounty program
+  - responsible disclosure
+  - vulnerability disclosure program
+
+platforms:
+  hackerone: true
+  bugcrowd: true
+  yeswehack: true
+  immunefi: true
+  intigriti: true
+  github: true
+  x: true
+
+pages_per_source: 3
+
+hackerone:
+  api_username_env: H1_USERNAME
+  api_token_env: H1_TOKEN
+intigriti:
+  token_env: INTIGRITI_TOKEN
+x:
+  bearer_token_env: X_BEARER_TOKEN
+
+clone:
+  recurse_submodules: true
+  max_repo_mb: 2048
+  skip_if_exists: true
+  blobless: true          # partial clone: history without blobs until checkout
+
+docs:
+  enabled: true
+  min_score: 8
+  probe_paths: []
+  seed_hosts: []
+
+solidity:
+  enabled: true
+  sparse: false           # full tree; sparse breaks solc import resolution
+  install_foundry_deps: true
+  bridge_non_foundry: true   # synthesise foundry.toml for Hardhat/Truffle trees
+  skip_mocks: true
+  skip_interfaces: true
+  economic_weighting: true
+  fork_rpc_env: ETH_RPC_URL
+  slither_detectors: ""
+  max_hits_per_rule_per_file: 2
+  tools:
+    slither: true
+    aderyn: true
+    mythril: true
+    forge_build: true
+    echidna: true
+
+poc:
+  enabled: true
+  framework: foundry
+  out_dir: poc
+  max_pocs: 10
+
+audit:
+  custom_rules: true
+  max_file_bytes: 2000000
+  tool_timeout: 1200
+  severity_floor: low
+  max_hits_per_rule: 3
+  max_total_findings: 120
+  exclude_dirs:
+    - node_modules
+    - vendor
+    - .git
+    - dist
+    - build
+    - target
+    - .venv
+    - venv
+    - __pycache__
+    - coverage
+    - .next
+    - .nuxt
+  tools:
+    semgrep: true
+    bandit: true
+    gosec: true
+    njsscan: true
+    osv_scanner: true
+    pip_audit: true
+    npm_audit: true
+    trivy: true
+    gitleaks: true
+    trufflehog: true
+
+report:
+  formats: [md, json, html]
+  include_code_snippets: true
+  snippet_lines: 4
+  redact_secrets: true

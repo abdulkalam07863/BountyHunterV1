@@ -1,0 +1,3977 @@
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python bh.py target https://docs.aladdin.club/security-bounty --go
+
+| |__ ___ _ _ _ __ | || |__ _ _ _ __ | | ___ _ __
+| '_ \ / _ | | | | '_ | | ' | | | | ' | / _ \ '|
+| |) | () | || | | | | || | | | || | | | | || __/ |
+|./ _/ _,|| ||_|| ||_,|| ||____|_|
+
+intake https://docs.aladdin.club/security-bounty
+parsed scope
+┌────────────┬─────────────────────────────────────────────────────────┐
+│ field │ value │
+├────────────┼─────────────────────────────────────────────────────────┤
+│ repo │ https://github.com/AladdinDAO/aladdin-v3-contracts.git │
+│ │ path: contracts/concentrator │
+│ │ path: contracts/clever │
+│ │ path: contracts/f(x) │
+│ repo │ https://github.com/AladdinDAO/fx-protocol-contracts.git │
+│ │ (whole repository) │
+│ repo │ https://github.com/AladdinDAO/aladdin-v2-contracts.git │
+│ │ path: contracts/stake │
+│ │ path: contracts/token │
+│ ladder │ critical: $500,000 │
+│ │ high: $20,000 │
+│ │ medium: $10,000 │
+│ │ low: $2,000 │
+│ contacts │ security@aladdin.club │
+│ exclusions │ 4 │
+└────────────┴─────────────────────────────────────────────────────────┘
+scope -> D:\BugBounty\target\docs.aladdin.club-security-bounty\scope.json
+42 prior audit file(s) in repo - read these first
+audit-reports\AladdinETH_Report_v1.0_2022_12_22.pdf
+audit-reports\fx_btcUSD_Report_v1.0_2024_04_19.pdf
+audit-reports\PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf
+audit-reports\PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf
+audit-reports\SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf
+audit-reports\SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf
+audit-reports\SECBIT_Aladdin_Stakedao_Migration_Report_v1.0_2026_06_30.pdf
+audit-reports\SECBIT_AladdinCVX_v1.0_20221209.pdf
+auditing aladdin-v3-contracts (977 files)
+16:58:10 INFO bh: npm_audit -> 0 (ok)
+16:58:10 INFO bh: trivy -> 0 (missing)
+16:58:10 INFO bh: osv_scanner -> 0 (missing)
+16:58:10 INFO bh: gosec -> 0 (missing/skipped)
+16:58:10 INFO bh: trufflehog -> 0 (missing)
+16:58:10 INFO bh: gitleaks -> 0 (missing)
+16:58:10 INFO bh: pip_audit -> 0 (missing/skipped)
+16:58:10 INFO bh: njsscan -> 0 (missing)
+16:58:10 INFO bh: mythril -> 0 (missing)
+16:58:11 INFO bh: echidna -> 0 (missing)
+16:58:11 INFO bh: aderyn -> 0 (missing)
+16:58:13 INFO bh: bandit -> 11 (ok)
+16:58:14 INFO bh: slither -> 0 (rc=1)
+16:58:19 INFO bh: forge_build -> 1 (rc=1)
+16:59:08 INFO bh: semgrep -> 112 (ok)
+16:59:08 INFO bh: custom rules: 0 hits
+16:59:08 INFO bh: custom rules -> 0
+16:59:11 INFO bh: defi rules -> 386
+aladdin-v3-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool │ status │
+├──────────────┼─────────────────┤
+│ npm-audit │ ok │
+│ trivy │ missing │
+│ osv-scanner │ missing │
+│ gosec │ missing/skipped │
+│ trufflehog │ missing │
+│ gitleaks │ missing │
+│ pip-audit │ missing/skipped │
+│ njsscan │ missing │
+│ mythril │ missing │
+│ echidna │ missing │
+│ aderyn │ missing │
+│ bandit │ ok │
+│ slither │ rc=1 │
+│ forge-build │ rc=1 │
+│ semgrep │ ok │
+│ custom-rules │ ok │
+│ defi-rules │ ok │
+└──────────────┴─────────────────┘
+auditing fx-protocol-contracts (367 files)
+16:59:12 INFO bh: npm_audit -> 0 (ok)
+16:59:12 INFO bh: osv_scanner -> 0 (missing)
+16:59:12 INFO bh: trufflehog -> 0 (missing)
+16:59:12 INFO bh: gosec -> 0 (missing/skipped)
+16:59:12 INFO bh: trivy -> 0 (missing)
+16:59:12 INFO bh: gitleaks -> 0 (missing)
+16:59:12 INFO bh: njsscan -> 0 (missing)
+16:59:12 INFO bh: mythril -> 0 (missing)
+16:59:12 INFO bh: pip_audit -> 0 (missing/skipped)
+16:59:13 INFO bh: echidna -> 0 (missing)
+16:59:13 INFO bh: aderyn -> 0 (missing)
+16:59:15 INFO bh: bandit -> 11 (ok)
+16:59:20 INFO bh: slither -> 0 (rc=1)
+16:59:26 INFO bh: forge_build -> 1 (rc=1)
+16:59:50 INFO bh: semgrep -> 25 (ok)
+16:59:51 INFO bh: custom rules: 0 hits
+16:59:51 INFO bh: custom rules -> 0
+16:59:52 INFO bh: defi rules -> 166
+fx-protocol-contracts - tool
+status
+┌──────────────┬─────────────────┐
+│ tool │ status │
+├──────────────┼─────────────────┤
+│ npm-audit │ ok │
+│ osv-scanner │ missing │
+│ trufflehog │ missing │
+│ gosec │ missing/skipped │
+│ trivy │ missing │
+│ gitleaks │ missing │
+│ njsscan │ missing │
+│ mythril │ missing │
+│ pip-audit │ missing/skipped │
+│ echidna │ missing │
+│ aderyn │ missing │
+│ bandit │ ok │
+│ slither │ rc=1 │
+│ forge-build │ rc=1 │
+│ semgrep │ ok │
+│ custom-rules │ ok │
+│ defi-rules │ ok │
+└──────────────┴─────────────────┘
+auditing aladdin-v2-contracts (142 files)
+16:59:52 INFO bh: npm_audit -> 0 (ok)
+16:59:52 INFO bh: osv_scanner -> 0 (missing)
+16:59:52 INFO bh: gosec -> 0 (missing/skipped)
+16:59:53 INFO bh: trufflehog -> 0 (missing)
+16:59:53 INFO bh: trivy -> 0 (missing)
+16:59:53 INFO bh: gitleaks -> 0 (missing)
+16:59:53 INFO bh: mythril -> 0 (missing)
+16:59:53 INFO bh: njsscan -> 0 (missing)
+16:59:53 INFO bh: pip_audit -> 0 (missing/skipped)
+16:59:53 INFO bh: echidna -> 0 (missing)
+16:59:53 INFO bh: aderyn -> 0 (missing)
+16:59:55 INFO bh: bandit -> 11 (ok)
+16:59:56 INFO bh: slither -> 0 (rc=1)
+17:00:00 INFO bh: forge_build -> 1 (rc=1)
+17:00:16 INFO bh: semgrep -> 3 (ok)
+17:00:17 INFO bh: custom rules: 0 hits
+17:00:17 INFO bh: custom rules -> 0
+17:00:17 INFO bh: defi rules -> 63
+aladdin-v2-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool │ status │
+├──────────────┼─────────────────┤
+│ npm-audit │ ok │
+│ osv-scanner │ missing │
+│ gosec │ missing/skipped │
+│ trufflehog │ missing │
+│ trivy │ missing │
+│ gitleaks │ missing │
+│ mythril │ missing │
+│ njsscan │ missing │
+│ pip-audit │ missing/skipped │
+│ echidna │ missing │
+│ aderyn │ missing │
+│ bandit │ ok │
+│ slither │ rc=1 │
+│ forge-build │ rc=1 │
+│ semgrep │ ok │
+│ custom-rules │ ok │
+│ defi-rules │ ok │
+└──────────────┴─────────────────┘
+report -> D:\BugBounty\target\docs.aladdin.club-security-bounty\reports\audit-20261115T113018Z.md
+report -> D:\BugBounty\target\docs.aladdin.club-security-bounty\reports\audit-20261115T113018Z.json
+report -> D:\BugBounty\target\docs.aladdin.club-security-bounty\reports\audit-20261115T113018Z.html
+poc ->
+D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH001_State_update_after_external_call.t.sol
+poc -> D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH002_delegatecall_to_variable_target.t.sol
+poc ->
+D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH003_State_update_after_external_call.t.sol
+poc -> D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH004_Flash_loan_entrypoint.t.sol
+poc -> D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH005_Flash_loan_entrypoint.t.sol
+poc -> D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH006_Spot_price_used_as_oracle.t.sol
+poc -> D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH007_Spot_price_used_as_oracle.t.sol
+poc ->
+D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH008_Chainlink_answer_without_staleness_check.t.s
+ol
+poc ->
+D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH009_Chainlink_answer_without_staleness_check.t.s
+ol
+poc -> D:\BugBounty\target\docs.aladdin.club-security-bounty\poc\test\PoC_HIGH010_Spot_price_used_as_oracle.t.sol
+
+critical 1 / high 18 - validate against the live target before writing up
+
+check and find the issue still in this tool, ask for any code file you want to check
+
+Worked for 13s · 1 step
+
+Verdict: this run is not auditable. The two load-bearing steps died on all three targets.
+The 19 findings are output from a pipeline where nothing compiled and the only real static analyzer never ran. Everything downstream (PoCs, HIGH001–HIGH010, the write-up list) is speculative text-matching. Don't write anything up from this yet.
+
+Hard evidence from your own log
+Signal	Meaning
+slither -> 0 (rc=1) on 3/3 repos	Slither crashed, every time. Zero Solidity dataflow coverage.
+forge_build -> 1 (rc=1) on 3/3	No compilation. 1 here is the file-count field, i.e. the tool counted one build artifact and still called it a build.
+PoCs emitted anyway	PoC_HIGH001…HIGH010 were generated with no compiling project behind them. They will not run.
+bandit -> 11 — identical on all three repos	Bandit is a Python linter. It is scanning the same helper scripts, not the contracts. It contributes nothing to scope.
+semgrep -> 112 / 25 / 3	Semgrep's Solidity coverage is thin; these are mostly generic pattern hits. The 4.5x spread across repos with similar file counts shows it's noise-driven, not signal.
+defi rules -> 386 / 166 / 63	Rule-per-line matching. 386 hits cannot all be findings.
+Report + PoCs written with every row red	No gate. The run should abort on forge_build rc!=0, not continue.
+The 18 "highs" collapse to ~5 categories
+State_update_after_external_call ×2 (HIGH001, HIGH003)
+delegatecall_to_variable_target ×1 (HIGH002)
+Flash_loan_entrypoint ×2 (HIGH004, HIGH005)
+Spot_price_used_as_oracle ×3 (HIGH006, HIGH007, HIGH010)
+Chainlink_answer_without_staleness_check ×2 (HIGH008, HIGH009)
+That leaves 8 unaccounted for — presumably more of the same. And note: "flash loan entrypoint" is not a vulnerability, it's a property. Every lending/CDP protocol has one. Reporting it as high is padding. spot_price_used_as_oracle is real only if you can show a manipulable pool is the sole price source at a decision point — the rule can't know that.
+
+Three structural bugs beyond the crashes
+Scope drift. You scoped contracts/concentrator, contracts/clever, contracts/f(x), contracts/stake, contracts/token. The tool audited 977 + 367 + 142 = 1486 files, whole repos. A large share of those 386 defi hits are out of scope and will get you triager pushback.
+contracts/f(x) — the parentheses. On Windows (cmd.exe and PowerShell) ( ) are shell metacharacters. If the path is passed to a subprocess unquoted, or if the tool cds into it, every tool invoked against that subtree breaks. This is a strong candidate for a chunk of the rc=1s, and it's specific to this target.
+stderr is swallowed. You log rc=1 and nothing else. There is no way to diagnose from the log whether slither failed on solc-missing, remappings, pragma mismatch, or the parens path. Log the last ~40 lines of stderr per tool into the report.
+Also missing and relevant here: no gitleaks/trufflehog. A repo with hardhat deploy scripts and RPC configs almost certainly has keys in history. And aderyn would have given you a solc-based detector pass even when slither's Python layer chokes.
+
+Fix order
+git submodule update --init --recursive + forge install in each clone, then a real forge build. Nothing else matters until rc=0.
+Quote every path; use --root/--path flags rather than cd. Test specifically on the f(x) directory.
+Gate the pipeline: abort before semgrep/defi-rules/PoC generation if build or slither fails.
+Restrict scanning to the five scoped paths; drop bandit entirely for these repos.
+Dedupe by (check, contract, function) and demote flash_loan_entrypoint to informational.
+Add gitleaks and aderyn; drop mythril/echidna unless you're prepared to write invariants.
+Cross-reference against the 42 prior audit PDFs before anything reaches a draft — the tool listed 8 of them and never parsed them, so there is no known-issue dedupe at all.
+Send me these and I'll pinpoint it
+bh.py — or just the functions that invoke slither, forge_build, and the defi-rules runner
+The defi rules file (the 386-hit source)
+scope.json — I want to see the 4 exclusions
+The full audit-20261115T113018Z.md — I'll triage all 19 against the code
+One PoC, e.g. PoC_HIGH006_Spot_price_used_as_oracle.t.sol
+The raw stderr from slither . and forge build run manually inside contracts/f(x) — paste it, even truncated
+The stderr is the one that will end this fastest. Run those two by hand in that directory first.
+
+#!/usr/bin/env python3
+import bh # noqa: F401 (loads .env)
+from bh.cli import main
+
+if name == "main":
+main()
+this is bh.py codes
+
+Worked for 9s · 1 step
+
+That file is only the launcher — the whole pipeline lives in the bh/ package it imports. Nothing in those 6 lines decides anything, but two things do fall out of it:
+
+1. import bh is doing work at import time. The comment says it loads .env. So bh/__init__.py has env-loading side effects. Consequences:
+
+Every subprocess the tool spawns inherits that environment. If .env holds RPC keys or API tokens, they're passed to slither, forge, semgrep, bandit and anything else — visible in /proc/<pid>/environ and in any crash dump.
+python bh.py --help pays for env load plus whatever else __init__.py does before argparse can bail.
+It also means the module import order matters, and a broken .env line can fail before argparse validates anything.
+2. bh.py and bh/ share a name. It resolves correctly — the script directory is sys.path[0], and package directories are checked before same-named modules, so import bh gets the package and __main__ gets your file. It works, but it's fragile: any python -m bh or test harness invocation from a different cwd can flip the resolution. Worth knowing, not worth fixing right now.
+
+Neither of these is your crash. To find that I need the modules cli.py dispatches into.
+
+Fastest way to get me there — run this and paste it
+cd /d "D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools"
+dir /s /b bh\*.py
+That gives me the real layout so I stop guessing at filenames.
+
+Then these greps — the first two are the ones that matter
+findstr /s /n /c:"forge_build" bh\*.py
+findstr /s /n /c:"slither" bh\*.py
+findstr /s /n /c:"subprocess" bh\*.py
+findstr /s /n /c:"shell=True" bh\*.py
+findstr /s /n /c:"f(x)" bh\*.py
+findstr /s /n /c:"scope" bh\*.py
+shell=True plus the f(x) path is my leading hypothesis for the rc=1s. The parens are unquoted shell metacharacters in cmd.exe; if the path reaches subprocess with shell=True or through a shell-wrapped cd, cmd tries to parse f(x) as a command group and the child dies before it ever starts. On Windows that surfaces as rc=1 with a message on stderr that your logger throws away.
+
+Files, in the order I want them
+bh/cli.py — argument parsing and the --go chain, so I can see where the gate should go
+Whichever file contains forge_build and slither (the greps will name it) — this is where the bug is
+bh/__init__.py — confirm exactly what the import does
+The scope parser — how the contracts/f(x) path is turned into a working directory
+The defi-rules file — the 386-hit source
+The PoC generator
+scope.json — the 4 exclusions
+And still the one thing you haven't sent: run forge build and slither . by hand inside contracts/f(x) and paste the stderr raw. If my hypothesis is right you'll see cmd complaining about x or an unexpected ) before solc is ever invoked. That single paste either confirms the path bug in one shot or eliminates it and moves us to remappings and solc version.
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>cd /d "D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools"
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>dir /s /b bh*.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\cli.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\clone.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\config.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\db.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\discover.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\docs_hunt.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\intel.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\links.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\poc.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\report.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\sources.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\target.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\util.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh_init_.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh_main_.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\audit\defi_rules.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\audit\rules.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\audit\scan.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\audit\solidity.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\audit\tools.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\audit\triage.py
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\bh\audit_init_.py
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>findstr /s /n /c:"forge_build" bh*.py
+bh\audit\solidity.py:26:def forge_build(repo: Path, cfg):
+bh\audit\solidity.py:130: "forge_build": forge_build, "echidna": echidna}
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>findstr /s /n /c:"slither" bh*.py
+bh\audit\solidity.py:40:def slither(repo: Path, cfg):
+bh\audit\solidity.py:41: if not have_tool("slither"):
+bh\audit\solidity.py:42: return [], {"tool": "slither", "status": "missing"}
+bh\audit\solidity.py:45: cmd = ["slither", ".", "--json", out,
+bh\audit\solidity.py:48: if cfg.solidity.get("slither_detectors"):
+bh\audit\solidity.py:49: cmd += ["--detect", cfg.solidity["slither_detectors"]]
+bh\audit\solidity.py:57: findings.append(_f(d.get("check", "slither"), d.get("impact"), "slither",
+bh\audit\solidity.py:64: log.warning("slither parse: %s", exc)
+bh\audit\solidity.py:67: return findings, {"tool": "slither", "status": "ok" if res["ok"] else f"rc={res['rc']}",
+bh\audit\solidity.py:129:RUNNERS = {"slither": slither, "aderyn": aderyn, "mythril": mythril,
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>findstr /s /n /c:"subprocess" bh*.py
+bh\audit\rules.py:59: r"subprocess.(?:run|call|Popen|check_output)\s*([^)]shell\s=\sTrue",
+bh\audit\rules.py:62: r"\bos.(?:system|popen)\s(", "Shell execution.", "Prefer subprocess list."),
+bh\clone.py:10:import subprocess
+bh\clone.py:23: return subprocess.run(
+bh\clone.py:60: subprocess.run(
+bh\util.py:8:import subprocess
+bh\util.py:146: p = subprocess.run(cmd, cwd=str(cwd) if cwd else None, timeout=timeout,
+bh\util.py:151: except subprocess.TimeoutExpired:
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>findstr /s /n /c:"shell=True" bh*.py
+bh\audit\rules.py:58: Rule("INJ-CMD-SHELL", "shell=True", "high", "injection", "CWE-78", "medium", PY,
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>findstr /s /n /c:"f(x)" bh*.py
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>findstr /s /n /c:"scope" bh*.py
+bh\audit\triage.py:56:def in_scope(f: dict, scope_paths) -> bool:
+bh\audit\triage.py:58: if not scope_paths:
+bh\audit\triage.py:63: return any(path.startswith(p.strip("/")) for p in scope_paths)
+bh\audit\triage.py:67: scope_paths=None) -> dict:
+bh\audit\triage.py:109: norm = [f for f in norm if in_scope(f, scope_paths)]
+bh\cli.py:23:from .target import intake, save_scope
+bh\cli.py:144: pid, scope = intake(cfg, db, session, args.url)
+bh\cli.py:146: t = Table(title="parsed scope")
+bh\cli.py:149: for r in scope["repos"]:
+bh\cli.py:156: for s in scope["severity_table"]) or "-")
+bh\cli.py:157: t.add_row("contacts", ", ".join(scope["contacts"]) or "-")
+bh\cli.py:158: t.add_row("exclusions", str(len(scope["exclusions"])))
+bh\cli.py:163: console.print(f"[green]scope ->[/] {save_scope(pdir, scope)}")
+bh\cli.py:172: findings, cloned, scope_paths = [], [], []
+bh\cli.py:173: for r in scope["repos"]:
+bh\cli.py:179: scope_paths.extend(r["paths"])
+bh\cli.py:187: scope["existing_audits"] = prior
+bh\cli.py:195: res = run_audit(cfg, dest, RULES_DIR, solidity_mode=True, scope_paths=scope_paths)
+bh\cli.py:212: for path in write_reports(p, audit, cfg, pdir, {"files": 0, "bytes": 0}, scope):
+bh\cli.py:220: for path in generate(pdir, findings, scope, fallback):
+bh\db.py:13: name TEXT, program_url TEXT, repo_url TEXT, scope TEXT, payout TEXT,
+bh\db.py:33:FIELDS = {"name", "program_url", "repo_url", "scope", "payout", "stack",
+bh\db.py:59: """INSERT INTO projects (platform, slug, name, program_url, repo_url, scope,
+bh\db.py:63: fields.get("repo_url"), fields.get("scope"), fields.get("payout"),
+bh\discover.py:40: scope=rec.get("scope"), payout=rec.get("payout"),
+bh\docs_hunt.py:16:MEDIUM = {"in scope": 2, "out of scope": 2, "severity": 2, "critical": 1, "cvss": 2,
+bh\docs_hunt.py:45: 'inurl:docs "vulnerability disclosure policy" "scope"',
+bh\docs_hunt.py:47: '"bug bounty" "out of scope" "safe harbor" docs']
+bh\docs_hunt.py:87: "scope_hosts": sorted({h.lower() for h in SCOPE_RX.findall(text)
+bh\docs_hunt.py:172: "scope": ", ".join(meta["scope_hosts"][:10]) or None,
+bh\docs_hunt.py:292: payout=rec["payout"], scope=rec["scope"],
+bh\docs_hunt.py:295: db.add_link(pid, "repo in scope", extra, "repo")
+bh\links.py:29: ('scope', '"{q}" ("in scope" OR "out of scope")'),
+bh\poc.py:44:def generate(project_path: Path, findings: list, scope: dict,
+bh\poc.py:48: addrs = scope.get("addresses") or ([fallback_address] if fallback_address else [])
+bh\report.py:43:def build_markdown(project, audit, cfg, workspace: Path, stats: dict, scope=None) -> str:
+bh\report.py:55: if scope:
+bh\report.py:56: L.append("## Program scope\n")
+bh\report.py:57: for r in scope.get("repos", []):
+bh\report.py:59: if scope.get("severity_table"):
+bh\report.py:62: for s in scope["severity_table"]]
+bh\report.py:63: if scope.get("contacts"):
+bh\report.py:64: L.append(f"\nReporting: {', '.join(scope['contacts'])}")
+bh\report.py:65: if scope.get("existing_audits"):
+bh\report.py:67: L += [f"- {a}" for a in scope["existing_audits"][:20]]
+bh\report.py:68: if scope.get("exclusions"):
+bh\report.py:70: L += [f"- {e}" for e in scope["exclusions"][:15]]
+bh\report.py:73: L += ["## Executive summary\n", f"{total} findings after deduplication, scope filter and per-rule cap.\n",
+bh\report.py:120:def build_html(project, audit, cfg, workspace: Path, stats: dict, scope=None) -> str:
+bh\report.py:144:def write_reports(project, audit, cfg, project_path: Path, stats: dict, scope=None) -> list:
+bh\report.py:148: payload = {"project": dict(project), "scope": scope, "counts": audit["counts"],
+bh\report.py:154: p.write_text(build_markdown(project, audit, cfg, project_path, stats, scope), encoding="utf-8")
+bh\report.py:160: p.write_text(build_html(project, audit, cfg, project_path, stats, scope), encoding="utf-8")
+bh\sources.py:14: "payout": kw.get("payout"), "scope": kw.get("scope"),
+bh\sources.py:172: "payout": None, "scope": None, "description": tw.get("text"),
+bh\target.py:1:"""Single-URL intake: bounty page -> machine-readable scope file."""
+bh\target.py:42:def parse_scope(page_url: str, text: str) -> dict:
+bh\target.py:59: if len(s) > 12 and re.search(r"\b(out of scope|not eligible|not rewarded|"
+bh\target.py:77: scope = parse_scope(url, text)
+bh\target.py:78: if not scope["repos"]:
+bh\target.py:79: raise RuntimeError("no repository in scope - page may be JS-rendered")
+bh\target.py:83: name=scope["title"] or host, program_url=url, repo_url=scope["repos"][0]["url"],
+bh\target.py:84: payout=(f"critical {max(s['max_reward'] for s in scope['severity_table']):,}"
+bh\target.py:85: if scope["severity_table"] else None),
+bh\target.py:86: scope=", ".join(f"{r['url'].split('/')[-1]}:{','.join(r['paths']) or '*'}"
+bh\target.py:87: for r in scope["repos"])[:1500],
+bh\target.py:88: description=f"chains={','.join(scope['chains'])}; contacts={','.join(scope['contacts'])}; "
+bh\target.py:89: f"cvss_v={scope['cvss_version']}; audits={len(scope['existing_audits'])}",
+bh\target.py:90: status="scoped")
+bh\target.py:91: for e in scope["contacts"]:
+bh\target.py:93: for a in scope["existing_audits"]:
+bh\target.py:96: return pid, scope
+bh\target.py:99:def save_scope(project_path: Path, scope: dict) -> Path:
+bh\target.py:100: p = project_path / "scope.json"
+bh\target.py:101: p.write_text(json.dumps(scope, indent=2), encoding="utf-8")
+
+Worked for 24s · 1 step
+
+The greps did more work than you probably intended. Here's what they establish and what they kill.
+
+Killed: my shell=True + parens theory
+util.py:146 is subprocess.run(cmd, cwd=..., timeout=...) — list form, no shell. solidity.py:45 builds ["slither", ".", "--json", out, ...] and runs at the repo root, not inside f(x). And findstr /c:"f(x)" came back empty, so the path isn't hardcoded anywhere — it's data out of scope.json. So the parens reach the child process through Python's argv, not through cmd.exe. Still possible that forge's own Windows solc spawning chokes on it, but it's no longer the leading candidate.
+
+Proven: the build failure is a finding, not a gate
+solidity.py:130 puts forge_build in the RUNNERS dict alongside slither, aderyn, mythril, echidna:
+
+python
+RUNNERS = {"slither": slither, "aderyn": aderyn, "mythril": mythril,
+           "forge_build": forge_build, "echidna": echidna}
+So a compile error is collected as a piece of data and its count printed — that's why the log reads forge_build -> 1 (rc=1). One finding, exit 1, and the pipeline keeps going. Nothing downstream ever consults it:
+
+cli.py:195   res = run_audit(cfg, dest, RULES_DIR, solidity_mode=True, scope_paths=scope_paths)
+cli.py:212   for path in write_reports(p, audit, cfg, pdir, ...)
+cli.py:220   for path in generate(pdir, findings, scope, fallback)
+No if res["tools"]["forge-build"]["rc"] != 0: abort. Reports and PoCs get written unconditionally. That's the bug that let an uncompiled tree produce 10 PoC files.
+
+Same at solidity.py:67 — "status": "ok" if res["ok"] else f"rc={res['rc']}". Failure is encoded as a string and returned as a successful function call.
+
+Second bug: scope filter is a raw startswith
+triage.py:63   return any(path.startswith(p.strip("/")) for p in scope_paths)
+contracts/stake therefore matches contracts/stakedao-migration, contracts/stake-v2, contracts/stakeXYZ. No path-boundary check, no normalization of backslashes or leading ./, no case handling. On Windows that's also the difference between contracts\clever\x.sol and contracts/clever. If any producer of f["path"] emits a backslash or a repo-name prefix, the whole filter silently drops to zero and in_scope's if not scope_paths: return True masks it.
+
+Third: slither has no path restriction
+solidity.py:45 runs slither . with no --filter-paths derived from scope_paths. Even if the scope filter worked downstream, slither analyzes all 977 files and burns time on out-of-scope code. The scope list is only applied at triage, after the expensive stage.
+
+New leading hypothesis: the clones have no submodules
+Foundry repos don't build without lib/forge-std, lib/openzeppelin-contracts and friends. clone.py:23 and clone.py:60 are your two subprocess.run sites. If either is a plain git clone --depth 1 without --recurse-submodules, then:
+
+forge build fails on unresolved imports → rc=1
+slither needs a compile, gets none → crashes → rc=1, empty findings
+everything downstream runs against a source tree that never resolved
+That single cause explains all six rc=1 lines across all three repos at once, and it explains why slither returned exactly 0 rather than a partial parse. It also explains the identical bandit -> 11 on every repo — nothing repo-specific ever got far enough to matter.
+
+Files, now in dependency order
+bh/audit/solidity.py — full, all 130 lines. This is the crash site.
+bh/clone.py — full. Checking for --recurse-submodules / --depth.
+bh/util.py lines 120–175 — the runner. Need to see whether stderr is captured and where it goes.
+bh/cli.py lines 160–230 — the chain, to place the gate.
+bh/audit/scan.py — how RUNNERS is dispatched and how results aggregate.
+bh/audit/triage.py — full, to rewrite in_scope.
+bh/poc.py — to see how it decides a PoC is worth writing with no build.
+bh/audit/defi_rules.py — the 386-hit source.
+D:\BugBounty\target\docs.aladdin.club-security-bounty\scope.json
+And the stderr — this is now the tiebreaker
+Redirect it to a file so nothing gets lost:
+
+cd /d D:\BugBounty\target\docs.aladdin.club-security-bounty\src\aladdin-v3-contracts
+git submodule status > sub.txt 2>&1
+dir lib > lib.txt 2>&1
+forge build > build.txt 2>&1
+Then paste sub.txt, lib.txt and build.txt. If sub.txt is empty or lib.txt shows an empty directory, the cause is confirmed and the fix is one line in clone.py. If build.txt shows pragma or solc-version errors instead, we go a different direction. Either way it's a handful of lines and it ends this.
+
+why are you confusing me, i just ask to correct the remaining issue and you are started deep analysis
+
+Worked for 3s · 1 step
+
+Fair. Three fixes, minimal.
+
+1. bh/cli.py — after line 195, stop the pipeline when a tool dies
+
+python
+res = run_audit(cfg, dest, RULES_DIR, solidity_mode=True, scope_paths=scope_paths)
+
+bad = [t for t, s in res.get("tools", {}).items()
+       if str(s.get("status", "")).startswith("rc=")]
+if bad:
+    console.print(f"[red]abort:[/] {', '.join(bad)} failed - tree not compiled")
+    raise SystemExit(1)
+If res has no tools key, it's whatever scan.py returns for tool status — check the key name there.
+
+2. bh/audit/triage.py — replace line 63
+
+python
+def in_scope(f: dict, scope_paths) -> bool:
+    if not scope_paths:
+        return True
+    def n(p):
+        return (p or "").replace("\\", "/").lstrip("./").strip("/")
+    path = n(f.get("path", ""))
+    return any(path == n(p) or path.startswith(n(p) + "/") for p in scope_paths)
+3. bh/clone.py — submodules
+
+Add "--recurse-submodules" to the git clone in the subprocess.run at line 23. And fix the three existing clones now:
+
+cd /d D:\BugBounty\target\docs.aladdin.club-security-bounty\src\aladdin-v3-contracts
+git submodule update --init --recursive
+Run it in fx-protocol-contracts and aladdin-v2-contracts too, then forge build in each.
+
+That's the whole fix. Re-run after. If forge build still fails, paste build.txt and I'll fix that specifically.
+
+https://github.com/abdulkalam07863/BountyHunter
+check can you read this repo, i have uploaded all the files
+
+Worked for 9s · 5 steps
+
+No — 404. Your profile only has two public repos (SquadV4, tea), so BountyHunter is either private or not pushed.
+
+Three ways forward, pick one:
+
+Make it public — Settings → General → Danger Zone → Change visibility. Then give me the link again.
+Paste the files directly into chat — solidity.py, clone.py, util.py, cli.py, triage.py, poc.py, scan.py, defi_rules.py. That's the fastest, no git needed.
+Attach them as an upload if your client supports it.
+The three fixes I gave are still valid regardless — #2 (triage) and #3 (submodules) you can apply right now without me seeing anything. Only #1 needs the file, because the key name in res depends on what scan.py returns.
+
+So: apply #2 and #3, run git submodule update --init --recursive in all three clones, and send me solidity.py so I can finish #1 correctly.
+
+check now i maiden it public
+
+Worked for 37s · 16 steps
+
+Read it. Found the actual cause — and it's not the parens.
+
+The repos are Hardhat projects. The tool forces Foundry.
+
+solidity.py runs forge build --sizes and slither . --compile-force-framework foundry against trees that have a package.json but no foundry.toml. Foundry's default source dir is src/; Aladdin's contracts are in contracts/. So forge finds no sources, and slither's forced-foundry compile gets nothing to analyze → exits 1 with zero detectors run. That is your slither -> 0 (rc=1) and forge_build -> 1 (rc=1) on all three repos, every time.
+
+_bootstrap already installs npm deps and writes remappings.txt — it just never writes the project config those remappings belong to.
+
+Four patches.
+
+1. bh/audit/solidity.py — add above forge_build
+
+python
+_TOML = """[profile.default]
+auto_detect_solc = true
+src = "{src}"
+out = "out"
+libs = ["lib", "node_modules"]
+optimizer = true
+optimizer_runs = 200
+evm_version = "paris"
+"""
+
+
+def ensure_foundry_config(repo: Path) -> bool:
+    """Hardhat/Truffle trees have no foundry.toml - bridge them instead of failing."""
+    if (repo / "foundry.toml").is_file():
+        return True
+    src = "contracts" if (repo / "contracts").is_dir() else "src"
+    if not (repo / src).is_dir():
+        return False
+    (repo / "lib").mkdir(exist_ok=True)
+    (repo / "foundry.toml").write_text(_TOML.format(src=src), encoding="utf-8")
+    return True
+libs now includes node_modules, so @openzeppelin/... resolves directly — you no longer depend on _bootstrap's four hardcoded prefixes.
+
+2. same file — forge_build, call it and stop treating --sizes as failure
+
+python
+def forge_build(repo: Path, cfg):
+    if not have_tool("forge"):
+        return [], {"tool": "forge-build", "status": "missing"}
+    if not ensure_foundry_config(repo):
+        return [], {"tool": "forge-build", "status": "no sources"}
+    if cfg.solidity.get("install_foundry_deps", True):
+        run_cmd(["forge", "install", "foundry-rs/forge-std", "--no-commit"], cwd=repo, timeout=900)
+    res = run_cmd(["forge", "build", "--sizes"], cwd=repo, timeout=int(cfg.audit.get("tool_timeout", 1800)))
+    oversize = "exceeds the size limit" in (res["out"] + res["err"])
+    findings = []
+    if not res["ok"] and not oversize:
+        findings.append(_f("Compilation failure", "high", "forge-build", category="build",
+                           detail=(res["err"] or res["out"])[:1500], economic=1))
+    return findings, {"tool": "forge-build", "status": "ok" if (res["ok"] or oversize) else f"rc={res['rc']}",
+                      "dur": res["dur"], "err": (res["err"] or "")[:400]}
+--sizes exits 1 whenever a contract passes 24 KB — even on a clean build. That was silently inflating your "Compilation failure" count.
+
+3. same file — slither, first line after the tool check
+
+python
+if not ensure_foundry_config(repo):
+        return [], {"tool": "slither", "status": "no sources"}
+4. bh/cli.py — gate, and per-repo scope
+
+Replace scope_paths.extend(r["paths"]) inside the clone loop with a map:
+
+python
+repo_paths = {}
+    ...
+            cloned.append(dest)
+            repo_paths[dest] = r["paths"]
+Then in the audit loop:
+
+python
+res = run_audit(cfg, dest, RULES_DIR, solidity_mode=True, scope_paths=repo_paths.get(dest) or None)
+        console.print(_tool_table(dest.name, res["tools"]))
+        dead = [t.get("tool") for t in res["tools"]
+                if str(t.get("status", "")).startswith(("rc=", "crash"))]
+        if dead:
+            console.print(f"[red]{dest.name}: {', '.join(dead)} failed[/]")
+            failed.append(dest.name)
+            continue
+Declare failed = [] next to findings, cloned, scope_paths = [], [], [], and before write_reports:
+
+python
+if len(failed) == len(cloned):
+        console.print("[red]every repo failed to build - no findings to report[/]")
+        sys.exit(1)
+Right now scope_paths is one flat list shared by every repo, so v2's contracts/stake gets applied to the v3 audit.
+
+Also fix while you're in there — aderyn, mythril and echidna all return ..., {"status": "ok"} regardless of res["rc"], so a crashing aderyn shows green in your table. Use the same "ok" if res["ok"] else f"rc={res['rc']}" pattern.
+
+After patching, wipe the bad state and re-run:
+
+rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+python bh.py target https://docs.aladdin.club/security-bounty --go
+If forge build still fails after the config is written, it's a real pragma or import problem in their tree and the stderr will now be in the forge-build finding detail — send me that and we fix it for real.
+
+check everything then give me all the files in compressed format as folders also each complete files
+
+Worked for 1m 3s · 10 steps
+
+Checked all of it. Beyond the build failure, here are the rest of the real defects — all confirmed in source, all fixed below:
+
+RULES_DIR points at bh/audit, but custom.yaml lives in rules/ — your custom semgrep rules have never loaded (hence custom rules: 0 hits on every run, every repo)
+verify.py has import bh before from __future__ import annotations → SyntaxError, so the self-check can never run
+aderyn, mythril, echidna, bandit, njsscan, trivy, gitleaks, trufflehog, osv-scanner, pip-audit all return {"status": "ok"} regardless of exit code — a crashed scanner reports green
+scope_paths is one flat list shared by all three repos, so v2's contracts/stake filters the v3 audit
+cap_per_rule caps at 6 per rule but there's no global ceiling, so 386 defi hits reach the report
+PoC pragma hardcoded to 0.8.20 regardless of the target's pragma
+cmd_target passes "tools": [] into the report, so the write-up never records which scanners ran
+Apply over your tree:
+
+BountyHunter/
+├── config.yaml                  (replace)
+├── verify.py                    (replace)
+└── bh/
+    ├── cli.py                   (replace)
+    ├── poc.py                   (replace)
+    └── audit/
+        ├── solidity.py          (replace)
+        ├── triage.py            (replace)
+        └── tools.py             (replace)
+Unchanged: bh/__init__.py, __main__.py, bh.py, clone.py, config.py, db.py, discover.py, docs_hunt.py, intel.py, links.py, report.py, sources.py, target.py, util.py, audit/__init__.py, audit/rules.py, audit/defi_rules.py, rules/custom.yaml.
+
+bh/audit/solidity.py
+python
+from __future__ import annotations
+
+import json
+import tempfile
+from pathlib import Path
+
+from ..util import have_tool, log, run_cmd, short_hash
+
+SEV = {"critical": "critical", "high": "high", "medium": "medium", "low": "low",
+       "informational": "info", "info": "info", "optimization": "info"}
+
+_TOML = """[profile.default]
+auto_detect_solc = true
+src = "{src}"
+out = "out"
+libs = ["lib", "node_modules"]
+optimizer = true
+optimizer_runs = 200
+evm_version = "paris"
+"""
+
+
+def _norm(s):
+    return SEV.get(str(s or "").lower(), "medium")
+
+
+def _f(title, sev, tool, **kw):
+    return {"title": title, "severity": _norm(sev), "confidence": kw.get("confidence", "medium"),
+            "category": kw.get("category", "solidity"), "cwe": kw.get("cwe"),
+            "file": kw.get("file"), "line": kw.get("line"), "code": kw.get("code"),
+            "detail": kw.get("detail", ""), "remediation": kw.get("remediation", ""),
+            "tool": tool, "economic": kw.get("economic", 2), "references": kw.get("references", []),
+            "fingerprint": short_hash(f"{tool}:{kw.get('file')}:{kw.get('line')}:{title}")}
+
+
+def ensure_foundry_config(repo: Path) -> bool:
+    """Foundry projects ship foundry.toml. Hardhat/Truffle trees do not - bridge them
+    instead of letting forge default to a src/ directory that does not exist."""
+    if (repo / "foundry.toml").is_file():
+        return True
+    src = "contracts" if (repo / "contracts").is_dir() else "src"
+    if not (repo / src).is_dir():
+        return False
+    (repo / "lib").mkdir(exist_ok=True)
+    (repo / "foundry.toml").write_text(_TOML.format(src=src), encoding="utf-8")
+    log.info("wrote foundry.toml (src=%s) for %s", src, repo.name)
+    return True
+
+
+def _status(res, ok_extra=False):
+    if res["ok"] or ok_extra:
+        return "ok"
+    return f"rc={res['rc']}"
+
+
+def forge_build(repo: Path, cfg):
+    if not have_tool("forge"):
+        return [], {"tool": "forge-build", "status": "missing"}
+    if not ensure_foundry_config(repo):
+        return [], {"tool": "forge-build", "status": "no sources"}
+    if cfg.solidity.get("install_foundry_deps", True):
+        run_cmd(["forge", "install", "foundry-rs/forge-std", "--no-commit"], cwd=repo, timeout=900)
+    res = run_cmd(["forge", "build", "--sizes"], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1800)))
+    oversize = "exceeds the size limit" in (res["out"] + res["err"])
+    findings = []
+    if not res["ok"] and not oversize:
+        findings.append(_f("Compilation failure", "high", "forge-build", category="build",
+                           detail=(res["err"] or res["out"])[:1500], economic=1))
+    return findings, {"tool": "forge-build", "status": _status(res, oversize),
+                      "dur": res["dur"], "err": (res["err"] or "")[:400]}
+
+
+def slither(repo: Path, cfg):
+    if not have_tool("slither"):
+        return [], {"tool": "slither", "status": "missing"}
+    if not ensure_foundry_config(repo):
+        return [], {"tool": "slither", "status": "no sources"}
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    cmd = ["slither", ".", "--json", out,
+           "--filter-paths", "mocks|test|lib|interfaces|node_modules",
+           "--compile-force-framework", "foundry"]
+    if cfg.solidity.get("slither_detectors"):
+        cmd += ["--detect", cfg.solidity["slither_detectors"]]
+    res = run_cmd(cmd, cwd=repo, timeout=int(cfg.audit.get("tool_timeout", 2400)))
+    findings = []
+    try:
+        data = json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "{}")
+        for d in (data.get("results", {}) or {}).get("detectors", []):
+            el = (d.get("elements") or [{}])[0]
+            sm = el.get("source_mapping", {})
+            findings.append(_f(d.get("check", "slither"), d.get("impact"), "slither",
+                               confidence=(d.get("confidence") or "medium").lower(),
+                               cwe=(d.get("cwe") or "") or None,
+                               file=sm.get("filename_relative"),
+                               line=(sm.get("lines") or [None])[0],
+                               detail=d.get("description", "")[:1500]))
+    except Exception as exc:
+        log.warning("slither parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    return findings, {"tool": "slither", "status": _status(res),
+                      "dur": res["dur"], "err": (res["err"] or "")[:400]}
+
+
+def aderyn(repo: Path, cfg):
+    if not have_tool("aderyn"):
+        return [], {"tool": "aderyn", "status": "missing"}
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    res = run_cmd(["aderyn", "-o", out, "."], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1800)))
+    findings = []
+    try:
+        data = json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "{}")
+        for d in (data.get("high_issues", {}).get("issues", [])
+                  + data.get("medium_issues", {}).get("issues", [])
+                  + data.get("low_issues", {}).get("issues", [])):
+            findings.append(_f(d.get("title", "aderyn"), d.get("severity"), "aderyn",
+                               file=d.get("contract_path"), line=d.get("line_no"),
+                               detail=d.get("description", "")[:1200],
+                               remediation=d.get("remediation", "")))
+    except Exception as exc:
+        log.warning("aderyn parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    return findings, {"tool": "aderyn", "status": _status(res), "dur": res["dur"]}
+
+
+def mythril(repo: Path, cfg):
+    if not have_tool("myth"):
+        return [], {"tool": "mythril", "status": "missing"}
+    findings, dur, failed = [], 0.0, 0
+    for sol in list(repo.rglob("*.sol"))[:25]:
+        if any(p in {"mocks", "test", "lib", "node_modules"} for p in sol.parts):
+            continue
+        res = run_cmd(["myth", "analyze", str(sol), "-o", "json", "--execution-timeout", "120"],
+                      cwd=repo, timeout=400)
+        dur += res["dur"]
+        if not res["ok"]:
+            failed += 1
+        try:
+            for issue in json.loads(res["out"] or "{}").get("issues", []):
+                findings.append(_f(issue.get("title", "mythril"), issue.get("severity"), "mythril",
+                                   file=str(sol.relative_to(repo)),
+                                   detail=issue.get("description", "")[:900],
+                                   remediation=issue.get("remediation", "")))
+        except Exception:
+            continue
+    status = "ok" if failed == 0 else f"partial ({failed} files failed)"
+    return findings, {"tool": "mythril", "status": status, "dur": round(dur, 1)}
+
+
+def echidna(repo: Path, cfg):
+    if not have_tool("echidna"):
+        return [], {"tool": "echidna", "status": "missing"}
+    contracts = [p for p in repo.rglob("*.sol")
+                 if "test" in p.name.lower() and "lib" not in p.parts]
+    if not contracts:
+        return [], {"tool": "echidna", "status": "skipped: no property tests"}
+    res = run_cmd(["echidna", str(contracts[0]), "--contract", contracts[0].stem,
+                   "--test-limit", "50000"], cwd=repo, timeout=1800)
+    findings = [_f(f"Property violated: {l.strip()[:120]}", "high", "echidna",
+                   category="invariant", file=contracts[0].name, detail=l.strip(), economic=3)
+                for l in res["out"].splitlines() if "failed!" in l.lower()]
+    return findings, {"tool": "echidna", "status": _status(res), "dur": res["dur"]}
+
+
+RUNNERS = {"slither": slither, "aderyn": aderyn, "mythril": mythril,
+           "forge_build": forge_build, "echidna": echidna}
+bh/audit/triage.py
+python
+from __future__ import annotations
+
+import concurrent.futures as cf
+from pathlib import Path
+
+from ..util import log
+from . import defi_rules, scan, solidity, tools
+
+SEVERITY_ORDER = {"critical": 4, "high": 3, "medium": 2, "low": 1, "info": 0}
+BASE_CVSS = {"critical": 9.4, "high": 7.8, "medium": 5.4, "low": 2.9, "info": 0.0}
+CONF_ADJ = {"high": 0.4, "medium": 0.0, "low": -0.6}
+
+
+def cvss_for(severity: str, confidence: str) -> float:
+    return round(max(0.0, min(10.0, BASE_CVSS.get(severity, 5.0) + CONF_ADJ.get(confidence, 0.0))), 1)
+
+
+def economic_multiplier(f: dict) -> float:
+    base = {"reentrancy": 1.35, "oracle": 1.4, "flashloan": 1.35, "accounting": 1.3,
+            "precision": 1.2, "signature": 1.3, "upgrade": 1.25,
+            "access-control": 1.3}.get(f.get("category", ""), 1.0)
+    return base * (1 + 0.1 * (int(f.get("economic", 1)) - 1))
+
+
+def normalise(f: dict) -> dict:
+    sev = str(f.get("severity") or "medium").lower().strip()
+    sev = {"moderate": "medium", "error": "high", "warning": "medium", "note": "low"}.get(sev, sev)
+    f["severity"] = sev if sev in SEVERITY_ORDER else "medium"
+    conf = str(f.get("confidence") or "medium").lower()
+    f["confidence"] = conf if conf in CONF_ADJ else "medium"
+    f["cvss"] = round(min(10.0, cvss_for(f["severity"], f["confidence"]) * economic_multiplier(f)), 1)
+    return f
+
+
+def dedupe(findings: list) -> list:
+    """Collapse to one hit per rule per file, keeping the highest-scoring line.
+    Line numbers shift with refactors; the rule+file pair is the stable identity."""
+    best = {}
+    for f in findings:
+        key = f"{f.get('file')}::{f.get('tool')}::{(f.get('title') or '')[:40].lower()}"
+        if key not in best or f["cvss"] > best[key]["cvss"]:
+            best[key] = f
+    return list(best.values())
+
+
+def cap_per_rule(findings: list, cap: int = 3, max_total: int = 120) -> list:
+    """One rule must not own the report, and the report must not run to hundreds."""
+    counts: dict = {}
+    out = []
+    for f in findings:
+        key = f.get("tool") or "?"
+        counts[key] = counts.get(key, 0) + 1
+        if counts[key] <= cap:
+            out.append(f)
+        if len(out) >= max_total:
+            break
+    return out
+
+
+def _norm_path(p: str) -> str:
+    return (p or "").replace("\\", "/").lstrip("./").strip("/")
+
+
+def in_scope(f: dict, scope_paths) -> bool:
+    """Findings carry repo-relative paths; build findings carry none."""
+    if not scope_paths:
+        return True
+    path = _norm_path(f.get("file") or "")
+    if not path:
+        return True
+    for p in scope_paths:
+        p = _norm_path(p)
+        if p and (path == p or path.startswith(p + "/")):
+            return True
+    return False
+
+
+def run_audit(cfg, repo: Path, rules_dir: Path, solidity_mode: bool = False,
+              scope_paths=None) -> dict:
+    enabled = {k for k, v in (cfg.audit.get("tools") or {}).items() if v}
+    sol_enabled = {k for k, v in (cfg.solidity.get("tools") or {}).items() if v} if solidity_mode else set()
+    all_findings, tool_report = [], []
+
+    with cf.ThreadPoolExecutor(max_workers=max(1, cfg.max_concurrency)) as pool:
+        futures = {}
+        for name in enabled:
+            if name not in tools.RUNNERS:
+                continue
+            if name == "semgrep":
+                futures[pool.submit(tools.RUNNERS[name], repo, cfg, rules_dir)] = name
+            else:
+                futures[pool.submit(tools.RUNNERS[name], repo, cfg)] = name
+        for name in sol_enabled:
+            if name in solidity.RUNNERS:
+                futures[pool.submit(solidity.RUNNERS[name], repo, cfg)] = name
+        for fut in cf.as_completed(futures):
+            name = futures[fut]
+            try:
+                found, meta = fut.result()
+            except Exception as exc:
+                tool_report.append({"tool": name, "status": f"crash: {exc}"})
+                continue
+            all_findings.extend(found)
+            tool_report.append(meta)
+            log.info("%s -> %d (%s)", name, len(found), meta.get("status"))
+
+    if cfg.audit.get("custom_rules", True):
+        hits = scan.run_rules(repo, cfg)
+        all_findings.extend(hits)
+        tool_report.append({"tool": "custom-rules", "status": "ok", "count": len(hits)})
+        log.info("custom rules -> %d", len(hits))
+    if solidity_mode:
+        hits = defi_rules.run(repo, cfg)
+        all_findings.extend(hits)
+        tool_report.append({"tool": "defi-rules", "status": "ok", "count": len(hits)})
+        log.info("defi rules -> %d", len(hits))
+
+    floor = SEVERITY_ORDER.get(str(cfg.audit.get("severity_floor", "low")).lower(), 1)
+    norm = [normalise(f) for f in all_findings]
+    norm = dedupe([f for f in norm if SEVERITY_ORDER[f["severity"]] >= floor])
+    norm = [f for f in norm if in_scope(f, scope_paths)]
+    norm.sort(key=lambda f: (-f["cvss"], f.get("file") or "", f.get("line") or 0))
+    norm = cap_per_rule(norm,
+                        int(cfg.audit.get("max_hits_per_rule", 3)),
+                        int(cfg.audit.get("max_total_findings", 120)))
+
+    counts = {s: 0 for s in SEVERITY_ORDER}
+    for f in norm:
+        counts[f["severity"]] += 1
+    for i, f in enumerate(norm, 1):
+        f["fid"] = f"{f['severity'][:4].upper()}-{i:03d}"
+    return {"findings": norm, "counts": counts, "tools": tool_report}
+bh/audit/tools.py
+python
+from __future__ import annotations
+
+import json
+import tempfile
+from pathlib import Path
+
+from ..util import have_tool, log, run_cmd, short_hash
+
+SEV_MAP = {"critical": "critical", "high": "high", "error": "high", "warning": "medium",
+           "medium": "medium", "moderate": "medium", "low": "low", "info": "info",
+           "note": "low", "style": "info"}
+
+
+def _norm(s):
+    return SEV_MAP.get(str(s or "").strip().lower(), "medium")
+
+
+def _f(title, sev, tool, **kw):
+    return {"title": title, "severity": _norm(sev), "confidence": kw.get("confidence", "medium"),
+            "category": kw.get("category", "sast"), "cwe": kw.get("cwe"), "file": kw.get("file"),
+            "line": kw.get("line"), "code": kw.get("code"), "detail": kw.get("detail", ""),
+            "remediation": kw.get("remediation", ""), "tool": tool,
+            "references": kw.get("references", []),
+            "fingerprint": short_hash(f"{tool}:{kw.get('file')}:{kw.get('line')}:{title}")}
+
+
+def _status(res, ok_extra=False):
+    """A scanner that exits non-zero found nothing usable - do not report green."""
+    if res["ok"] or ok_extra:
+        return "ok"
+    return f"rc={res['rc']}"
+
+
+def _meta(res, tool, ok_extra=False):
+    return {"tool": tool, "status": _status(res, ok_extra), "dur": res["dur"],
+            "err": (res.get("err") or "")[:400]}
+
+
+def semgrep(repo: Path, cfg, rules_dir: Path):
+    if not have_tool("semgrep"):
+        return [], {"tool": "semgrep", "status": "missing"}
+    configs = ["--config", "auto"]
+    custom = Path(rules_dir) / "custom.yaml"
+    if cfg.audit.get("custom_rules", True) and custom.is_file():
+        configs += ["--config", str(custom)]
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    res = run_cmd(["semgrep", "--json", "--quiet", *configs,
+                   "--max-target-bytes", str(cfg.audit.get("max_file_bytes", 2_000_000)),
+                   "--output", out, "."], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1200)))
+    findings = []
+    try:
+        data = json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "{}")
+        for r in data.get("results", []):
+            extra = r.get("extra", {})
+            meta = extra.get("metadata", {})
+            findings.append(_f(r.get("check_id") or "semgrep",
+                               meta.get("impact") or extra.get("severity"), "semgrep",
+                               confidence=meta.get("confidence", "medium"),
+                               category=meta.get("category", "sast"),
+                               cwe=(meta.get("cwe") or [None])[0], file=r.get("path"),
+                               line=(r.get("start") or {}).get("line"), code=extra.get("lines"),
+                               detail=extra.get("message", ""),
+                               remediation=meta.get("fix") or "",
+                               references=meta.get("references") or []))
+    except Exception as exc:
+        log.warning("semgrep parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    return findings, _meta(res, "semgrep")
+
+
+def bandit(repo: Path, cfg):
+    if not have_tool("bandit"):
+        return [], {"tool": "bandit", "status": "missing"}
+    res = run_cmd(["bandit", "-r", ".", "-f", "json", "-q", "-x",
+                   ",".join(cfg.audit.get("exclude_dirs", []))], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1200)))
+    findings = []
+    try:
+        for r in json.loads(res["out"] or "{}").get("results", []):
+            findings.append(_f(r.get("test_name") or r.get("test_id"), r.get("issue_severity"),
+                               "bandit", confidence=(r.get("issue_confidence") or "medium").lower(),
+                               file=r.get("filename"), line=r.get("line_number"),
+                               code=r.get("code"), detail=r.get("issue_text"),
+                               remediation=r.get("more_info", "")))
+    except Exception as exc:
+        log.warning("bandit parse: %s", exc)
+    return findings, _meta(res, "bandit")
+
+
+def gosec(repo: Path, cfg):
+    if not have_tool("gosec") or not (repo / "go.mod").exists():
+        return [], {"tool": "gosec", "status": "missing/skipped"}
+    res = run_cmd(["gosec", "-fmt=json", "-quiet", "./..."], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for r in json.loads(res["out"] or "{}").get("Issues", []):
+            findings.append(_f(r.get("rule_id"), r.get("severity"), "gosec",
+                               file=r.get("file"), line=r.get("line"), code=r.get("code"),
+                               detail=r.get("details")))
+    except Exception as exc:
+        log.warning("gosec parse: %s", exc)
+    return findings, _meta(res, "gosec")
+
+
+def njsscan(repo: Path, cfg):
+    if not have_tool("njsscan"):
+        return [], {"tool": "njsscan", "status": "missing"}
+    res = run_cmd(["njsscan", "--json", "."], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for _, items in (json.loads(res["out"] or "{}").get("nodejs", {}) or {}).items():
+            for r in items.get("files", []):
+                for m in r.get("matches", []):
+                    findings.append(_f(m.get("type"), m.get("severity"), "njsscan",
+                                       file=r.get("file_path"), line=m.get("line"),
+                                       code=m.get("match"), detail=m.get("message")))
+    except Exception as exc:
+        log.warning("njsscan parse: %s", exc)
+    return findings, _meta(res, "njsscan")
+
+
+def osv_scanner(repo: Path, cfg):
+    if not have_tool("osv-scanner"):
+        return [], {"tool": "osv-scanner", "status": "missing"}
+    res = run_cmd(["osv-scanner", "--format", "json", "-r", "."], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for result in json.loads(res["out"] or "{}").get("results", []):
+            for pkg in result.get("packages", []):
+                p = pkg.get("package", {})
+                for v in pkg.get("vulnerabilities", []):
+                    findings.append(_f(f"{p.get('name')}: {v.get('summary') or v.get('id')}",
+                                       v.get("database_specific", {}).get("severity") or "high",
+                                       "osv-scanner", category="dependency",
+                                       file=result.get("source", {}).get("path"),
+                                       detail=(v.get("details") or "")[:1200],
+                                       references=v.get("references") or []))
+    except Exception as exc:
+        log.warning("osv parse: %s", exc)
+    return findings, _meta(res, "osv-scanner")
+
+
+def pip_audit(repo: Path, cfg):
+    if not have_tool("pip-audit") or not (repo / "requirements.txt").exists():
+        return [], {"tool": "pip-audit", "status": "missing/skipped"}
+    res = run_cmd(["pip-audit", "-r", "requirements.txt", "--format", "json"], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for dep in json.loads(res["out"] or "[]"):
+            for v in dep.get("vulns", []):
+                findings.append(_f(f"{dep.get('name')}: {v.get('id')}", "high", "pip-audit",
+                                   category="dependency", file="requirements.txt",
+                                   detail=" ".join(v.get("description", "").split())[:1200],
+                                   remediation=f"Upgrade to {v.get('fix_versions')}"))
+    except Exception as exc:
+        log.warning("pip-audit parse: %s", exc)
+    return findings, _meta(res, "pip-audit")
+
+
+def npm_audit(repo: Path, cfg):
+    if not have_tool("npm") or not (repo / "package.json").exists():
+        return [], {"tool": "npm-audit", "status": "missing/skipped"}
+    res = run_cmd(["npm", "audit", "--json", "--omit=dev"], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for name, adv in (json.loads(res["out"] or "{}").get("vulnerabilities") or {}).items():
+            for via in adv.get("via", []):
+                if isinstance(via, str):
+                    continue
+                findings.append(_f(f"{name}: {via.get('title')}", via.get("severity"), "npm-audit",
+                                   category="dependency", detail=via.get("url", ""),
+                                   references=[via["url"]] if via.get("url") else []))
+    except Exception as exc:
+        log.warning("npm audit parse: %s", exc)
+    return findings, _meta(res, "npm-audit")
+
+
+def trivy(repo: Path, cfg):
+    if not have_tool("trivy"):
+        return [], {"tool": "trivy", "status": "missing"}
+    res = run_cmd(["trivy", "fs", "--format", "json", "--quiet",
+                   "--scanners", "vuln,misconfig,secret", "."], cwd=repo, timeout=1800)
+    findings = []
+    try:
+        for target in json.loads(res["out"] or "{}").get("Results", []):
+            fp = target.get("Target")
+            for v in target.get("Vulnerabilities") or []:
+                findings.append(_f(f"{v.get('PkgName')}: {v.get('Title') or v.get('VulnerabilityID')}",
+                                   v.get("Severity"), "trivy", category="dependency", file=fp,
+                                   detail=v.get("Description", "")[:1200]))
+            for m in target.get("Misconfigurations") or []:
+                findings.append(_f(m.get("Title"), m.get("Severity"), "trivy",
+                                   category="misconfig", file=fp,
+                                   detail=m.get("Description", ""),
+                                   remediation=m.get("Resolution", "")))
+            for s in target.get("Secrets") or []:
+                findings.append(_f(f"Secret: {s.get('Title')}", s.get("Severity", "high"),
+                                   "trivy", category="secret", file=fp, line=s.get("StartLine")))
+    except Exception as exc:
+        log.warning("trivy parse: %s", exc)
+    return findings, _meta(res, "trivy")
+
+
+def gitleaks(repo: Path, cfg):
+    if not have_tool("gitleaks"):
+        return [], {"tool": "gitleaks", "status": "missing"}
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    res = run_cmd(["gitleaks", "detect", "--no-git", "--source", ".", "--report-format", "json",
+                   "--report-path", out, "--redact"], cwd=repo, timeout=1200)
+    if not Path(out).exists() or Path(out).stat().st_size == 0:
+        res = run_cmd(["gitleaks", "dir", ".", "-f", "json", "-r", out], cwd=repo, timeout=900)
+    findings = []
+    try:
+        for r in json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "[]"):
+            findings.append(_f(f"Secret: {r.get('RuleID')}", "high", "gitleaks",
+                               category="secret", file=r.get("File"), line=r.get("StartLine"),
+                               code=r.get("Match", "")[:400], detail=r.get("Description", "")))
+    except Exception as exc:
+        log.warning("gitleaks parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    return findings, _meta(res, "gitleaks")
+
+
+def trufflehog(repo: Path, cfg):
+    if not have_tool("trufflehog"):
+        return [], {"tool": "trufflehog", "status": "missing"}
+    res = run_cmd(["trufflehog", "filesystem", ".", "--json", "--no-update"], cwd=repo, timeout=1800)
+    findings = []
+    for line in (res["out"] or "").splitlines():
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        det = r.get("SourceMetadata", {}).get("Data", {}).get("Filesystem", {})
+        findings.append(_f(f"Secret: {r.get('DetectorName')}",
+                           "critical" if r.get("Verified") else "high", "trufflehog",
+                           category="secret", file=det.get("file"), line=det.get("line"),
+                           code=(r.get("Raw") or "")[:200]))
+    return findings, _meta(res, "trufflehog")
+
+
+RUNNERS = {"semgrep": semgrep, "bandit": bandit, "gosec": gosec, "njsscan": njsscan,
+           "osv_scanner": osv_scanner, "pip_audit": pip_audit, "npm_audit": npm_audit,
+           "trivy": trivy, "gitleaks": gitleaks, "trufflehog": trufflehog}
+bh/poc.py
+python
+from __future__ import annotations
+
+import re
+from pathlib import Path
+
+TEMPLATE = '''// SPDX-License-Identifier: MIT
+pragma solidity ^{pragma};
+
+import "forge-std/Test.sol";
+
+/// @title PoC - {title}
+/// @notice {fid} ({severity}, CVSS~{cvss}) in {file}
+/// @dev Run: forge test --match-contract {contract} -vvvv --fork-url $ETH_RPC_URL
+contract {contract} is Test {{
+    address constant TARGET = {target};
+    address constant ATTACKER = address(0xA11CE);
+    address constant VICTIM   = address(0xB0B);
+
+    function setUp() public {{
+        vm.createSelectFork(vm.envString("ETH_RPC_URL"));
+        vm.deal(ATTACKER, 100 ether);
+        vm.startPrank(ATTACKER);
+    }}
+
+    function test_exploit() public {{
+        uint256 balBefore = address(ATTACKER).balance;
+
+        // 1. TODO reach the sink in {file}
+        // 2. TODO trigger the bug
+        // 3. TODO assert the gain
+
+        // assertGt(address(ATTACKER).balance, balBefore);
+        vm.stopPrank();
+    }}
+}}
+'''
+
+PRAGMA_RX = re.compile(r"pragma\s+solidity\s+[^0-9]*([0-9]+\.[0-9]+\.[0-9]+)")
+
+
+def _pragma(repo: Path | None) -> str:
+    """Match the target's pragma - a hardcoded 0.8.20 will not compile a 0.7.x tree."""
+    if repo is not None and repo.exists():
+        seen = []
+        for sol in list(repo.rglob("*.sol"))[:400]:
+            if any(p in {"test", "lib", "node_modules"} for p in sol.parts):
+                continue
+            try:
+                m = PRAGMA_RX.search(sol.read_text(encoding="utf-8", errors="replace")[:4000])
+            except OSError:
+                continue
+            if m:
+                seen.append(m.group(1))
+        if seen:
+            return max(seen, key=lambda v: tuple(int(x) for x in v.split(".")))
+    return "0.8.20"
+
+
+def _name(fid: str, title: str) -> str:
+    stem = re.sub(r"[^A-Za-z0-9]+", "_", title)[:40].strip("_")
+    return f"PoC_{fid.replace('-', '')}_{stem}"
+
+
+def generate(project_path: Path, findings: list, scope: dict,
+             fallback_address: str | None = None, repo: Path | None = None) -> list:
+    out_dir = project_path / "poc" / "test"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    pragma = _pragma(repo)
+    addrs = scope.get("addresses") or ([fallback_address] if fallback_address else [])
+    written, used = [], set()
+    for f in findings:
+        if len(written) >= 10:
+            break
+        if f["severity"] not in ("critical", "high"):
+            continue
+        name = _name(f["fid"], f["title"])
+        while name in used:
+            name += "_"
+        used.add(name)
+        body = TEMPLATE.format(pragma=pragma, title=f["title"], fid=f["fid"],
+                               severity=f["severity"], cvss=f["cvss"],
+                               file=f.get("file") or "?",
+                               contract=name, target=addrs[0] if addrs else "address(0)")
+        p = out_dir / f"{name}.t.sol"
+        p.write_text(body, encoding="utf-8")
+        written.append(p)
+    return written
+bh/cli.py
+python
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+import traceback
+from pathlib import Path
+
+from rich.console import Console
+from rich.table import Table
+
+from . import links
+from .audit import run_audit
+from .clone import CloneError, clone_repo
+from .config import Config
+from .db import DB
+from .discover import run_discovery
+from .docs_hunt import hunt
+from .intel import detect_stack, find_prior_audits, first_deployment_address, gather
+from .poc import generate
+from .report import write_index, write_reports
+from .target import intake, save_scope
+from .util import (BANNER, make_session, project_dir, repo_stats, resolve_workspace,
+                   setup_logging, slugify)
+
+console = Console()
+RULES_DIR = Path(__file__).resolve().parent.parent / "rules"
+
+
+def _ctx(args):
+    cfg = Config.load(args.config)
+    setup_logging(args.verbose)
+    workspace = resolve_workspace(cfg)
+    return cfg, workspace, DB(workspace / "bountyhunter.db"), make_session(
+        cfg.rate_limit_rps, cfg.request_timeout, cfg.user_agent)
+
+
+def _resolve(db, ident: str):
+    p = db.get_project(ident)
+    if not p:
+        console.print(f"[red]no project matching[/] {ident!r}")
+        sys.exit(2)
+    return p
+
+
+def _tool_table(name: str, tools_report: list) -> Table:
+    t = Table(title=f"{name} - tool status")
+    t.add_column("tool")
+    t.add_column("status")
+    for t_ in tools_report:
+        st = str(t_.get("status", "?"))
+        colour = "green" if st == "ok" else "red" if ("missing" in st or "rc=" in st or "crash" in st) else "yellow"
+        t.add_row(str(t_.get("tool", "?")), f"[{colour}]{st}[/]")
+    return t
+
+
+def _dead_tools(tools_report: list) -> list:
+    return [t_.get("tool") for t_ in tools_report
+            if str(t_.get("status", "")).startswith(("rc=", "crash"))]
+
+
+def cmd_discover(args):
+    cfg, workspace, db, session = _ctx(args)
+    for kw in (args.keyword or cfg.keywords):
+        console.print(f"[cyan]discovering[/] {kw}")
+        r = run_discovery(cfg, db, session, kw, use_x=not args.no_x)
+        for src, status in r["sources"].items():
+            console.print(f"  {src}: {status}")
+    out = workspace / "discovery-links.md"
+    out.write_text("\n".join(f"- [{l['label']}]({l['url']})" for l in db.links()), encoding="utf-8")
+    console.print(f"[green]links ->[/] {out}")
+
+
+def cmd_links(args):
+    cfg, workspace, db, _ = _ctx(args)
+    out = workspace / f"links-{slugify(args.keyword)}.md"
+    out.write_text("\n".join(f"- [{l['label']}]({l['url']})"
+                             for l in links.for_keyword(args.keyword)), encoding="utf-8")
+    console.print(f"[green]->[/] {out}")
+
+
+def cmd_list(args):
+    cfg, workspace, db, _ = _ctx(args)
+    rows = db.list_projects(args.status)
+    t = Table(title=f"{len(rows)} projects")
+    for c in ("ID", "Platform", "Name", "Repo", "Status"):
+        t.add_column(c, overflow="fold")
+    for p in rows:
+        t.add_row(str(p["id"]), p["platform"], (p["name"] or p["slug"])[:52],
+                  (p["repo_url"] or "-")[:52], p["status"])
+    console.print(t)
+
+
+def cmd_show(args):
+    cfg, workspace, db, session = _ctx(args)
+    p = _resolve(db, args.id)
+    intel = gather(cfg, session, p, workspace)
+    console.print_json(json.dumps({**dict(p), "intel": intel}, indent=2, default=str))
+    if intel["repo_url"]:
+        db.upsert_project(p["platform"], p["slug"], repo_url=intel["repo_url"], status="intel")
+
+
+def cmd_clone(args):
+    cfg, workspace, db, session = _ctx(args)
+    p = _resolve(db, args.id)
+    if not p["repo_url"]:
+        intel = gather(cfg, session, p, workspace)
+        if not intel["repo_url"]:
+            console.print("[red]no repo resolvable[/]")
+            sys.exit(1)
+        db.upsert_project(p["platform"], p["slug"], repo_url=intel["repo_url"])
+        p = db.get_project(args.id)
+    dest = project_dir(workspace, p["platform"], p["slug"]) / "repo" / "src"
+    try:
+        clone_repo(p["repo_url"], None, dest)
+    except CloneError as exc:
+        console.print(f"[red]{exc}[/]")
+        sys.exit(1)
+    db.upsert_project(p["platform"], p["slug"], local_path=str(dest), status="cloned")
+    console.print(f"[green]cloned ->[/] {dest}")
+
+
+def cmd_audit(args):
+    cfg, workspace, db, _ = _ctx(args)
+    p = _resolve(db, args.id)
+    pdir = project_dir(workspace, p["platform"], p["slug"])
+    repo = Path(p["local_path"]) if p["local_path"] else pdir / "repo"
+    if not repo.exists():
+        console.print("[red]no local repo - run `bh clone` first[/]")
+        sys.exit(1)
+    stats = repo_stats(repo)
+    db.upsert_project(p["platform"], p["slug"], stack=detect_stack(repo), status="auditing")
+    audit = run_audit(cfg, repo, RULES_DIR, solidity_mode=bool(list(repo.rglob("*.sol"))))
+    console.print(_tool_table(repo.name, audit["tools"]))
+    dead = _dead_tools(audit["tools"])
+    if dead:
+        console.print(f"[yellow]{', '.join(dead)} failed - findings may be incomplete[/]")
+    for f in audit["findings"]:
+        db.add_finding(p["id"], f)
+    for t in audit["tools"]:
+        db.add_run(p["id"], t.get("tool", "?"), t.get("status", "?"))
+    for path in write_reports(p, audit, cfg, pdir, stats):
+        console.print(f"[green]report ->[/] {path}")
+    db.set_status(p["id"], "audited")
+    console.print(f"{len(audit['findings'])} findings")
+
+
+def cmd_target(args):
+    cfg, workspace, db, session = _ctx(args)
+    console.print(f"[cyan]intake[/] {args.url}")
+    pid, scope = intake(cfg, db, session, args.url)
+
+    t = Table(title="parsed scope")
+    t.add_column("field")
+    t.add_column("value", overflow="fold")
+    for r in scope["repos"]:
+        t.add_row("repo", r["url"])
+        for p_ in r["paths"]:
+            t.add_row("", f"  path: {p_}")
+        if not r["paths"]:
+            t.add_row("", "  (whole repository)")
+    t.add_row("ladder", "\n".join(f"{s['severity']}: ${s['max_reward']:,}"
+                                  for s in scope["severity_table"]) or "-")
+    t.add_row("contacts", ", ".join(scope["contacts"]) or "-")
+    t.add_row("exclusions", str(len(scope["exclusions"])))
+    console.print(t)
+
+    p = db.get_project(str(pid))
+    pdir = project_dir(workspace, p["platform"], p["slug"])
+    console.print(f"[green]scope ->[/] {save_scope(pdir, scope)}")
+    if not args.go:
+        console.print("\n[dim]re-run with --go to clone and audit[/]")
+        return
+
+    if not os.environ.get(cfg.solidity.get("fork_rpc_env", "ETH_RPC_URL")):
+        console.print("[yellow]ETH_RPC_URL unset - PoC scaffolds will not fork[/]")
+
+    root = pdir / "repo"
+    findings, cloned, failed = [], [], []
+    repo_paths: dict = {}
+    for r in scope["repos"]:
+        name = r["url"].rstrip("/").split("/")[-1].removesuffix(".git")
+        dest = root / name
+        try:
+            clone_repo(r["url"], r["branch"], dest)
+            cloned.append(dest)
+            repo_paths[dest] = r["paths"]
+        except CloneError as exc:
+            console.print(f"[red]{name}: {exc}[/]")
+            failed.append(name)
+
+    prior: list = []
+    for dest in cloned:
+        prior += find_prior_audits(dest)
+    if prior:
+        scope["existing_audits"] = prior
+        console.print(f"[yellow]{len(prior)} prior audit file(s) in repo - read these first[/]")
+        for a in prior[:8]:
+            console.print(f"  [dim]{a}[/]")
+
+    all_tools: list = []
+    for dest in cloned:
+        stats = repo_stats(dest)
+        console.print(f"[cyan]auditing[/] {dest.name} ({stats['files']} files)")
+        res = run_audit(cfg, dest, RULES_DIR, solidity_mode=True,
+                        scope_paths=repo_paths.get(dest) or None)
+        console.print(_tool_table(dest.name, res["tools"]))
+        dead = _dead_tools(res["tools"])
+        if dead:
+            console.print(f"[red]{dest.name}: {', '.join(dead)} failed - tree not compiled[/]")
+            failed.append(dest.name)
+            all_tools.extend(res["tools"])
+            continue
+        for f in res["findings"]:
+            f["file"] = f"{dest.name}/{f.get('file') or ''}"
+        findings.extend(res["findings"])
+        all_tools.extend(res["tools"])
+        for t_ in res["tools"]:
+            db.add_run(pid, t_.get("tool", "?"), t_.get("status", "?"))
+
+    if not findings:
+        console.print(f"\n[red]no findings - {len(failed)} of {len(cloned) + len(failed)} "
+                      f"repos failed[/]")
+        db.set_status(pid, "error")
+        sys.exit(1)
+
+    findings.sort(key=lambda x: -x["cvss"])
+    for f in findings:
+        db.add_finding(pid, f)
+
+    counts = {s: 0 for s in ("critical", "high", "medium", "low", "info")}
+    for f in findings:
+        counts[f["severity"]] += 1
+    audit = {"findings": findings, "counts": counts, "tools": all_tools}
+
+    for path in write_reports(p, audit, cfg, pdir, {"files": 0, "bytes": 0}, scope):
+        console.print(f"[green]report ->[/] {path}")
+    if cfg.poc.get("enabled", True):
+        fallback = None
+        for dest in cloned:
+            fallback = first_deployment_address(dest)
+            if fallback:
+                break
+        for path in generate(pdir, findings, scope, fallback,
+                             repo=cloned[0] if cloned else None):
+            console.print(f"[green]poc ->[/] {path}")
+    db.set_status(pid, "audited")
+
+    if counts["critical"] or counts["high"]:
+        console.print(f"\n[yellow]critical {counts['critical']} / high {counts['high']} "
+                      f"- validate against the live target before writing up[/]")
+
+
+def cmd_docs(args):
+    cfg, workspace, db, session = _ctx(args)
+    res = hunt(cfg, db, session, use_defillama=not args.no_defillama,
+               use_gitbook=not args.no_gitbook, use_dorks=not args.no_dorks,
+               extra_hosts=args.host or [], limit=args.limit)
+    console.print(f"probed {res['hosts_probed']} -> [green]{res['stored']} programs[/]")
+    for src, status in res["sources"].items():
+        console.print(f"  {src}: {status}")
+
+
+def cmd_run(args):
+    cfg, workspace, db, session = _ctx(args)
+    for kw in (args.keyword or cfg.keywords):
+        run_discovery(cfg, db, session, kw, use_x=not args.no_x)
+    for p in db.list_projects("discovered")[: args.limit]:
+        try:
+            intel = gather(cfg, session, p, workspace)
+            if not intel["repo_url"]:
+                db.set_status(p["id"], "no-repo")
+                continue
+            db.upsert_project(p["platform"], p["slug"], repo_url=intel["repo_url"], status="intel")
+            dest = project_dir(workspace, p["platform"], p["slug"]) / "repo" / "src"
+            repo = clone_repo(intel["repo_url"], None, dest)
+            stats = repo_stats(repo)
+            db.upsert_project(p["platform"], p["slug"], local_path=str(repo),
+                              stack=detect_stack(repo), status="auditing")
+            audit = run_audit(cfg, repo, RULES_DIR, solidity_mode=bool(list(repo.rglob("*.sol"))))
+            console.print(_tool_table(repo.name, audit["tools"]))
+            dead = _dead_tools(audit["tools"])
+            if dead:
+                console.print(f"[yellow]{p['slug']}: {', '.join(dead)} failed[/]")
+            for f in audit["findings"]:
+                db.add_finding(p["id"], f)
+            for path in write_reports(db.get_project(p["id"]), audit, cfg,
+                                      project_dir(workspace, p["platform"], p["slug"]), stats):
+                console.print(f"[green]{p['slug']} ->[/] {path}")
+            db.set_status(p["id"], "audited")
+        except Exception as exc:
+            db.add_run(p["id"], "pipeline", "error", str(exc))
+            db.set_status(p["id"], "error")
+            console.print(f"[red]{p['slug']}: {exc}[/]")
+            if args.verbose:
+                traceback.print_exc()
+    console.print(f"[green]index ->[/] {write_index(workspace, db)}")
+
+
+def build_parser():
+    ap = argparse.ArgumentParser(prog="bh")
+    ap.add_argument("--config", default="config.yaml")
+    ap.add_argument("-v", "--verbose", action="store_true")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    p = sub.add_parser("target", help="intake a bounty URL, then clone + audit")
+    p.add_argument("url")
+    p.add_argument("--go", action="store_true")
+    p.set_defaults(func=cmd_target)
+
+    p = sub.add_parser("discover")
+    p.add_argument("-k", "--keyword", action="append")
+    p.add_argument("--no-x", action="store_true")
+    p.set_defaults(func=cmd_discover)
+
+    p = sub.add_parser("docs")
+    p.add_argument("--host", action="append")
+    p.add_argument("--limit", type=int, default=200)
+    p.add_argument("--no-defillama", action="store_true")
+    p.add_argument("--no-gitbook", action="store_true")
+    p.add_argument("--no-dorks", action="store_true")
+    p.set_defaults(func=cmd_docs)
+
+    p = sub.add_parser("links")
+    p.add_argument("keyword")
+    p.set_defaults(func=cmd_links)
+
+    p = sub.add_parser("list")
+    p.add_argument("--status")
+    p.set_defaults(func=cmd_list)
+
+    p = sub.add_parser("show")
+    p.add_argument("id")
+    p.set_defaults(func=cmd_show)
+
+    p = sub.add_parser("clone")
+    p.add_argument("id")
+    p.set_defaults(func=cmd_clone)
+
+    p = sub.add_parser("audit")
+    p.add_argument("id")
+    p.set_defaults(func=cmd_audit)
+
+    p = sub.add_parser("run")
+    p.add_argument("-k", "--keyword", action="append")
+    p.add_argument("--limit", type=int, default=10)
+    p.add_argument("--no-x", action="store_true")
+    p.set_defaults(func=cmd_run)
+    return ap
+
+
+def main(argv=None):
+    console.print(f"[bold cyan]{BANNER}[/]")
+    args = build_parser().parse_args(argv)
+    try:
+        args.func(args)
+    except KeyboardInterrupt:
+        console.print("\n[yellow]interrupted[/]")
+        sys.exit(130)
+verify.py
+python
+#!/usr/bin/env python3
+"""Post-install self check. Run before auditing anything."""
+from __future__ import annotations
+
+import os
+import shutil
+import sys
+
+import bh  # noqa: F401  (loads .env)
+
+TOOLS = ["git", "python", "forge", "slither", "aderyn", "myth", "echidna",
+         "semgrep", "bandit", "gitleaks", "trivy", "osv-scanner", "trufflehog"]
+
+REQUIRED = {"git", "python", "forge", "slither"}
+
+
+def main() -> int:
+    print("toolchain\n---------")
+    missing_required, missing_optional = [], []
+    for t in TOOLS:
+        ok = shutil.which(t) is not None
+        print(f"  {'OK  ' if ok else 'MISS'}  {t}")
+        if not ok:
+            (missing_required if t in REQUIRED else missing_optional).append(t)
+
+    print("\npython modules\n--------------")
+    for mod in ("requests", "yaml", "rich", "bs4"):
+        try:
+            __import__(mod)
+            print(f"  OK    {mod}")
+        except ImportError:
+            print(f"  MISS  {mod}")
+            missing_required.append(mod)
+
+    print("\nenvironment\n-----------")
+    rpc = os.environ.get("ETH_RPC_URL")
+    print(f"  ETH_RPC_URL  {'set' if rpc else 'MISSING (PoCs cannot fork)'}")
+
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import bh.cli  # noqa: F401
+        print("  package import  OK")
+    except Exception as exc:
+        print(f"  package import  FAILED: {exc}")
+        missing_required.append("bh package")
+
+    print("\nfoundry toolchain\n-----------------")
+    from bh.audit.solidity import ensure_foundry_config
+    from pathlib import Path
+    print(f"  solc            {'OK  ' if shutil.which('solc') or shutil.which('solc-select') else 'MISS (forge installs one)'}")
+    print(f"  config helper   {'OK' if callable(ensure_foundry_config) else 'MISS'}")
+    print(f"  rules/custom.yaml {'OK' if (Path(__file__).parent / 'rules' / 'custom.yaml').is_file() else 'MISS'}")
+
+    if missing_required:
+        print(f"\nBLOCKING: {', '.join(missing_required)}")
+        return 1
+    if missing_optional:
+        print(f"\nDegraded (audits still run): {', '.join(missing_optional)}")
+    print("\nReady.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+config.yaml
+yaml
+workspace_root: "D:\\BugBounty"
+fallback_root: "C:\\BugBounty"
+
+max_concurrency: 6
+request_timeout: 25
+rate_limit_rps: 1.5
+user_agent: "bountyhunter/1.1 (security-research)"
+
+keywords:
+  - bug bounty program
+  - responsible disclosure
+  - vulnerability disclosure program
+
+platforms:
+  hackerone: true
+  bugcrowd: true
+  yeswehack: true
+  immunefi: true
+  intigriti: true
+  github: true
+  x: true
+
+pages_per_source: 3
+
+hackerone:
+  api_username_env: H1_USERNAME
+  api_token_env: H1_TOKEN
+intigriti:
+  token_env: INTIGRITI_TOKEN
+x:
+  bearer_token_env: X_BEARER_TOKEN
+
+clone:
+  recurse_submodules: true
+  max_repo_mb: 2048
+  skip_if_exists: true
+  blobless: true          # partial clone: history without blobs until checkout
+
+docs:
+  enabled: true
+  min_score: 8
+  probe_paths: []
+  seed_hosts: []
+
+solidity:
+  enabled: true
+  sparse: false           # full tree; sparse breaks solc import resolution
+  install_foundry_deps: true
+  bridge_non_foundry: true   # synthesise foundry.toml for Hardhat/Truffle trees
+  skip_mocks: true
+  skip_interfaces: true
+  economic_weighting: true
+  fork_rpc_env: ETH_RPC_URL
+  slither_detectors: ""
+  max_hits_per_rule_per_file: 2
+  tools:
+    slither: true
+    aderyn: true
+    mythril: true
+    forge_build: true
+    echidna: true
+
+poc:
+  enabled: true
+  framework: foundry
+  out_dir: poc
+  max_pocs: 10
+
+audit:
+  custom_rules: true
+  max_file_bytes: 2000000
+  tool_timeout: 1200
+  severity_floor: low
+  max_hits_per_rule: 3
+  max_total_findings: 120
+  exclude_dirs:
+    - node_modules
+    - vendor
+    - .git
+    - dist
+    - build
+    - target
+    - .venv
+    - venv
+    - __pycache__
+    - coverage
+    - .next
+    - .nuxt
+  tools:
+    semgrep: true
+    bandit: true
+    gosec: true
+    njsscan: true
+    osv_scanner: true
+    pip_audit: true
+    npm_audit: true
+    trivy: true
+    gitleaks: true
+    trufflehog: true
+
+report:
+  formats: [md, json, html]
+  include_code_snippets: true
+  snippet_lines: 4
+  redact_secrets: true
+Two notes on behaviour change: cmd_target now exits 1 with no report if every repo fails to compile, and skips PoC generation for any repo whose build failed — that's what stops the blind PoC_HIGH00x files. RULES_DIR now resolves to rules/, so custom.yaml finally loads.
+
+Wipe the stale run and re-test:
+
+rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+python verify.py
+python bh.py target https://docs.aladdin.club/security-bounty --go
+If any rc= still shows on forge-build, the detail is now inside the finding — paste it.
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+python: can't open file 'D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools\rmdir': [Errno 2] No such file or directory
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python verify.py
+toolchain
+OK git
+OK python
+OK forge
+OK slither
+MISS aderyn
+MISS myth
+MISS echidna
+OK semgrep
+OK bandit
+MISS gitleaks
+MISS trivy
+MISS osv-scanner
+MISS trufflehog
+
+python modules
+OK requests
+OK yaml
+OK rich
+OK bs4
+
+environment
+ETH_RPC_URL set
+package import OK
+
+foundry toolchain
+solc OK
+config helper OK
+rules/custom.yaml OK
+
+Degraded (audits still run): aderyn, myth, echidna, gitleaks, trivy, osv-scanner, trufflehog
+
+Ready.
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python bh.py target https://docs.aladdin.club/security-bounty --go
+
+| |__ ___ _ _ _ __ | || |__ _ _ _ __ | | ___ _ __
+| '_ \ / _ | | | | '_ | | ' | | | | ' | / _ \ '|
+| |) | () | || | | | | || | | | || | | | | || __/ |
+|./ _/ _,|| ||_|| ||_,|| ||____|_|
+
+intake https://docs.aladdin.club/security-bounty
+parsed scope
+┌────────────┬─────────────────────────────────────────────────────────┐
+│ field │ value │
+├────────────┼─────────────────────────────────────────────────────────┤
+│ repo │ https://github.com/AladdinDAO/aladdin-v3-contracts.git │
+│ │ path: contracts/concentrator │
+│ │ path: contracts/clever │
+│ │ path: contracts/f(x) │
+│ repo │ https://github.com/AladdinDAO/fx-protocol-contracts.git │
+│ │ (whole repository) │
+│ repo │ https://github.com/AladdinDAO/aladdin-v2-contracts.git │
+│ │ path: contracts/stake │
+│ │ path: contracts/token │
+│ ladder │ critical: $500,000 │
+│ │ high: $20,000 │
+│ │ medium: $10,000 │
+│ │ low: $2,000 │
+│ contacts │ security@aladdin.club │
+│ exclusions │ 4 │
+└────────────┴─────────────────────────────────────────────────────────┘
+scope -> D:\BugBounty\target\docs.aladdin.club-security-bounty\scope.json
+42 prior audit file(s) in repo - read these first
+audit-reports\AladdinETH_Report_v1.0_2022_12_22.pdf
+audit-reports\fx_btcUSD_Report_v1.0_2024_04_19.pdf
+audit-reports\PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf
+audit-reports\PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf
+audit-reports\SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf
+audit-reports\SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf
+audit-reports\SECBIT_Aladdin_Stakedao_Migration_Report_v1.0_2026_06_30.pdf
+audit-reports\SECBIT_AladdinCVX_v1.0_20221209.pdf
+auditing aladdin-v3-contracts (977 files)
+17:45:34 INFO bh: npm_audit -> 0 (rc=-2)
+17:45:34 INFO bh: pip_audit -> 0 (missing/skipped)
+17:45:34 INFO bh: gitleaks -> 0 (missing)
+17:45:34 INFO bh: trivy -> 0 (missing)
+17:45:34 INFO bh: trufflehog -> 0 (missing)
+17:45:34 INFO bh: osv_scanner -> 0 (missing)
+17:45:34 INFO bh: gosec -> 0 (missing/skipped)
+17:45:34 INFO bh: njsscan -> 0 (missing)
+17:45:34 INFO bh: echidna -> 0 (missing)
+17:45:34 INFO bh: wrote foundry.toml (src=contracts) for aladdin-v3-contracts
+17:45:34 INFO bh: aderyn -> 0 (missing)
+17:45:34 INFO bh: mythril -> 0 (missing)
+17:45:37 INFO bh: bandit -> 11 (rc=1)
+17:45:56 INFO bh: forge_build -> 1 (rc=1)
+17:45:56 INFO bh: slither -> 0 (rc=1)
+17:46:34 INFO bh: semgrep -> 115 (ok)
+17:46:35 INFO bh: custom rules: 0 hits
+17:46:35 INFO bh: custom rules -> 0
+17:46:37 INFO bh: defi rules -> 386
+aladdin-v3-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool │ status │
+├──────────────┼─────────────────┤
+│ npm-audit │ rc=-2 │
+│ pip-audit │ missing/skipped │
+│ gitleaks │ missing │
+│ trivy │ missing │
+│ trufflehog │ missing │
+│ osv-scanner │ missing │
+│ gosec │ missing/skipped │
+│ njsscan │ missing │
+│ echidna │ missing │
+│ aderyn │ missing │
+│ mythril │ missing │
+│ bandit │ rc=1 │
+│ forge-build │ rc=1 │
+│ slither │ rc=1 │
+│ semgrep │ ok │
+│ custom-rules │ ok │
+│ defi-rules │ ok │
+└──────────────┴─────────────────┘
+aladdin-v3-contracts: npm-audit, bandit, forge-build, slither failed - tree not compiled
+auditing fx-protocol-contracts (367 files)
+17:46:38 INFO bh: npm_audit -> 0 (rc=-2)
+17:46:38 INFO bh: trufflehog -> 0 (missing)
+17:46:38 INFO bh: gitleaks -> 0 (missing)
+17:46:38 INFO bh: trivy -> 0 (missing)
+17:46:38 INFO bh: pip_audit -> 0 (missing/skipped)
+17:46:38 INFO bh: njsscan -> 0 (missing)
+17:46:38 INFO bh: gosec -> 0 (missing/skipped)
+17:46:38 INFO bh: osv_scanner -> 0 (missing)
+17:46:38 INFO bh: echidna -> 0 (missing)
+17:46:38 INFO bh: aderyn -> 0 (missing)
+17:46:38 INFO bh: mythril -> 0 (missing)
+17:46:40 INFO bh: bandit -> 11 (rc=1)
+17:46:51 INFO bh: slither -> 0 (rc=1)
+17:46:51 INFO bh: forge_build -> 1 (rc=1)
+17:47:15 INFO bh: semgrep -> 25 (ok)
+17:47:15 INFO bh: custom rules: 0 hits
+17:47:15 INFO bh: custom rules -> 0
+17:47:16 INFO bh: defi rules -> 166
+fx-protocol-contracts - tool
+status
+┌──────────────┬─────────────────┐
+│ tool │ status │
+├──────────────┼─────────────────┤
+│ npm-audit │ rc=-2 │
+│ trufflehog │ missing │
+│ gitleaks │ missing │
+│ trivy │ missing │
+│ pip-audit │ missing/skipped │
+│ njsscan │ missing │
+│ gosec │ missing/skipped │
+│ osv-scanner │ missing │
+│ echidna │ missing │
+│ aderyn │ missing │
+│ mythril │ missing │
+│ bandit │ rc=1 │
+│ slither │ rc=1 │
+│ forge-build │ rc=1 │
+│ semgrep │ ok │
+│ custom-rules │ ok │
+│ defi-rules │ ok │
+└──────────────┴─────────────────┘
+fx-protocol-contracts: npm-audit, bandit, slither, forge-build failed - tree not compiled
+auditing aladdin-v2-contracts (142 files)
+17:47:16 INFO bh: npm_audit -> 0 (rc=-2)
+17:47:16 INFO bh: gitleaks -> 0 (missing)
+17:47:16 INFO bh: trivy -> 0 (missing)
+17:47:16 INFO bh: pip_audit -> 0 (missing/skipped)
+17:47:16 INFO bh: trufflehog -> 0 (missing)
+17:47:16 INFO bh: njsscan -> 0 (missing)
+17:47:16 INFO bh: osv_scanner -> 0 (missing)
+17:47:16 INFO bh: gosec -> 0 (missing/skipped)
+17:47:16 INFO bh: echidna -> 0 (missing)
+17:47:16 INFO bh: wrote foundry.toml (src=contracts) for aladdin-v2-contracts
+17:47:16 INFO bh: mythril -> 0 (missing)
+17:47:16 INFO bh: aderyn -> 0 (missing)
+17:47:19 INFO bh: bandit -> 11 (rc=1)
+17:47:24 INFO bh: forge_build -> 1 (rc=1)
+17:47:25 INFO bh: slither -> 0 (rc=1)
+17:47:39 INFO bh: semgrep -> 3 (ok)
+17:47:39 INFO bh: custom rules: 0 hits
+17:47:39 INFO bh: custom rules -> 0
+17:47:39 INFO bh: defi rules -> 63
+aladdin-v2-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool │ status │
+├──────────────┼─────────────────┤
+│ npm-audit │ rc=-2 │
+│ gitleaks │ missing │
+│ trivy │ missing │
+│ pip-audit │ missing/skipped │
+│ trufflehog │ missing │
+│ njsscan │ missing │
+│ osv-scanner │ missing │
+│ gosec │ missing/skipped │
+│ echidna │ missing │
+│ mythril │ missing │
+│ aderyn │ missing │
+│ bandit │ rc=1 │
+│ forge-build │ rc=1 │
+│ slither │ rc=1 │
+│ semgrep │ ok │
+│ custom-rules │ ok │
+│ defi-rules │ ok │
+└──────────────┴─────────────────┘
+aladdin-v2-contracts: npm-audit, bandit, forge-build, slither failed - tree not compiled
+
+no findings - 3 of 6 repos failed
+
+Worked for 17s · 1 step
+
+Now the real cause is visible: npm_audit -> 0 (rc=-2).
+
+rc=-2 is run_cmd's FileNotFoundError branch. shutil.which("npm") succeeds, but subprocess.run(["npm", ...]) fails — on Windows npm is npm.cmd, and CreateProcess cannot execute a .cmd directly. So _bootstrap's npm install silently never runs, node_modules is never created, remappings.txt is never written, and forge build dies on every @openzeppelin/... import. That's why foundry.toml didn't help.
+
+bandit -> 11 (rc=1) is my regression: bandit, gosec, njsscan, npm-audit, osv-scanner, gitleaks and trufflehog all exit 1 to mean "findings found", not "crashed". _status flags them red and _dead_tools aborts the repo on them.
+
+Drop-in replacements below.
+
+bh/util.py — replace run_cmd entirely
+python
+def _prepare(cmd):
+    """Windows cannot exec .cmd/.bat through CreateProcess - resolve and wrap."""
+    if isinstance(cmd, str):
+        return cmd
+    argv = list(cmd)
+    if not argv:
+        return argv
+    exe = shutil.which(argv[0])
+    if exe:
+        argv[0] = exe
+        if os.name == "nt" and exe.lower().endswith((".cmd", ".bat")):
+            return ["cmd", "/c", *argv]
+    return argv
+
+
+def run_cmd(cmd, cwd=None, timeout=900, env=None) -> dict:
+    t0 = time.time()
+    try:
+        p = subprocess.run(_prepare(cmd), cwd=str(cwd) if cwd else None, timeout=timeout,
+                           env=env, capture_output=True, text=True, errors="replace")
+        return {"cmd": cmd if isinstance(cmd, str) else " ".join(map(str, cmd)),
+                "rc": p.returncode, "out": p.stdout or "", "err": p.stderr or "",
+                "dur": round(time.time() - t0, 2), "ok": p.returncode == 0}
+    except subprocess.TimeoutExpired:
+        return {"cmd": str(cmd), "rc": -9, "out": "", "err": f"timeout {timeout}s",
+                "dur": round(time.time() - t0, 2), "ok": False}
+    except FileNotFoundError:
+        return {"cmd": str(cmd), "rc": -2, "out": "", "err": "binary not found",
+                "dur": 0.0, "ok": False}
+    except Exception as exc:
+        return {"cmd": str(cmd), "rc": -1, "out": "", "err": str(exc),
+                "dur": round(time.time() - t0, 2), "ok": False}
+bh/clone.py — add import os, then replace _bootstrap
+python
+def _run(argv, cwd=None):
+    exe = shutil.which(argv[0])
+    if exe:
+        argv = [exe, *argv[1:]]
+        if os.name == "nt" and exe.lower().endswith((".cmd", ".bat")):
+            argv = ["cmd", "/c", *argv]
+    return subprocess.run(argv, cwd=cwd, capture_output=True, text=True,
+                          encoding="utf-8", errors="replace")
+
+
+def _bootstrap(dest: Path) -> None:
+    if (dest / "package.json").is_file() and not (dest / "node_modules").is_dir():
+        npm = shutil.which("npm")
+        if not npm:
+            print(f"WARN {dest.name}: package.json but no npm - build will fail")
+            return
+        print(f"installing npm deps for {dest.name} (one-time)")
+        r = _run([npm, "install", "--ignore-scripts", "--no-audit", "--no-fund"], cwd=dest)
+        if r.returncode != 0:
+            print(f"WARN {dest.name}: npm install rc={r.returncode}: {r.stderr.strip()[:300]}")
+    mods = dest / "node_modules"
+    if mods.is_dir():
+        maps = [
+            f"{s}/=node_modules/{s}/\n"
+            for s in ("@openzeppelin", "@uniswap", "@chainlink", "@balancer-labs",
+                      "@aave", "@curvefi", "@pendle", "@layerzerolabs")
+            if (mods / s).is_dir()
+        ]
+        if maps:
+            (dest / "remappings.txt").write_text("".join(maps), encoding="utf-8")
+    if not shutil.which("vyper"):
+        print(f"NOTE {dest.name}: vyper not on PATH - Vyper sources will not compile")
+bh/audit/tools.py — replace _status and _meta
+python
+# these exit 1 to mean "findings found", not "crashed"
+FINDING_EXIT = {"bandit", "gosec", "njsscan", "npm-audit", "osv-scanner",
+                "gitleaks", "trufflehog"}
+
+
+def _status(res, tool="", ok_extra=False):
+    if res["ok"] or ok_extra or (tool in FINDING_EXIT and res["rc"] == 1):
+        return "ok"
+    return f"rc={res['rc']}"
+
+
+def _meta(res, tool, ok_extra=False):
+    return {"tool": tool, "status": _status(res, tool, ok_extra), "dur": res["dur"],
+            "err": (res.get("err") or "")[:400]}
+bh/audit/solidity.py — surface the compiler output
+In forge_build, after the oversize line:
+
+python
+if not res["ok"] and not oversize:
+        log.warning("forge build failed (%s):\n%s", repo.name,
+                    (res["err"] or res["out"])[:2000])
+In slither, before return findings, {...}:
+
+python
+if not res["ok"]:
+        log.warning("slither failed (%s):\n%s", repo.name, (res["err"] or res["out"])[:2000])
+bh/cli.py — write the report even when repos fail
+Replace the block from if not findings: down to the sys.exit(1):
+
+python
+findings.sort(key=lambda x: -x["cvss"])
+    for f in findings:
+        db.add_finding(pid, f)
+
+    counts = {s: 0 for s in ("critical", "high", "medium", "low", "info")}
+    for f in findings:
+        counts[f["severity"]] += 1
+    audit = {"findings": findings, "counts": counts, "tools": all_tools}
+
+    for path in write_reports(p, audit, cfg, pdir, {"files": 0, "bytes": 0}, scope):
+        console.print(f"[green]report ->[/] {path}")
+
+    if failed:
+        console.print(f"\n[red]{len(failed)} of {len(cloned) + len(failed)} repos failed "
+                      f"- see the warnings above[/]")
+
+    if cfg.poc.get("enabled", True) and findings:
+        fallback = None
+        for dest in cloned:
+            fallback = first_deployment_address(dest)
+            if fallback:
+                break
+        for path in generate(pdir, findings, scope, fallback,
+                             repo=cloned[0] if cloned else None):
+            console.print(f"[green]poc ->[/] {path}")
+
+    db.set_status(pid, "error" if not findings else "audited")
+
+    if counts["critical"] or counts["high"]:
+        console.print(f"\n[yellow]critical {counts['critical']} / high {counts['high']} "
+                      f"- validate against the live target before writing up[/]")
+
+    if not findings:
+        sys.exit(1)
+Then re-run with -v so the new forge build failed warnings print in full:
+
+rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+python bh.py -v target https://docs.aladdin.club/security-bounty --go
+With npm fixed, node_modules and remappings.txt appear and the build should get past import resolution. Paste whatever the forge build failed block says next — that's now the only unknown.
+
+give me full codes to replace not just block, it's confusing
+
+Worked for 36s · 1 step
+
+Full files. Replace these five.
+
+bh/util.py
+python
+from __future__ import annotations
+
+import hashlib
+import logging
+import os
+import re
+import shutil
+import subprocess
+import sys
+import time
+import unicodedata
+from pathlib import Path
+
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+log = logging.getLogger("bh")
+
+BANNER = r"""
+ | |__   ___  _   _ _ __ | |_| |__  _   _ _ __ | |_ ___ _ __
+ | '_ \ / _ \| | | | '_ \| __| '_ \| | | | '_ \| __/ _ \ '__|
+ | |_) | (_) | |_| | | | | |_| | | | |_| | | | | ||  __/ |
+ |_.__/ \___/ \__,_|_| |_|\__|_| |_|\__,_|_| |_|\__\___|_|
+"""
+
+
+def slugify(text: str, maxlen: int = 60) -> str:
+    text = unicodedata.normalize("NFKD", str(text))
+    text = re.sub(r"[^\w\s.\-]", "", text, flags=re.UNICODE)
+    text = re.sub(r"[\s_]+", "-", text).strip("-.")
+    return (text[:maxlen] or "project").lower()
+
+
+def short_hash(text: str, n: int = 8) -> str:
+    return hashlib.sha1(text.encode("utf-8", "replace")).hexdigest()[:n]
+
+
+def human_bytes(n: int) -> str:
+    for unit in ("B", "KB", "MB", "GB"):
+        if n < 1024:
+            return f"{n:.0f}{unit}"
+        n /= 1024
+    return f"{n:.1f}TB"
+
+
+def redact(value: str, keep: int = 6) -> str:
+    if not value:
+        return ""
+    value = value.strip()
+    if len(value) <= keep * 2:
+        return value[:2] + "*" * max(len(value) - 2, 0)
+    return value[:keep] + "*" * 8 + value[-keep:]
+
+
+def resolve_workspace(cfg) -> Path:
+    for candidate in (cfg.workspace_root, cfg.fallback_root):
+        p = Path(candidate)
+        try:
+            if not p.exists():
+                drive = p.drive
+                if drive and not Path(drive + "\\").exists():
+                    continue
+                p.mkdir(parents=True, exist_ok=True)
+            if p.is_dir() and os.access(p, os.W_OK):
+                return p
+        except OSError:
+            continue
+    p = Path.cwd() / "BugBounty"
+    p.mkdir(parents=True, exist_ok=True)
+    log.warning("workspace_root unavailable, using %s", p)
+    return p
+
+
+def project_dir(workspace: Path, platform: str, slug: str) -> Path:
+    d = workspace / slugify(platform) / slug
+    for sub in ("repo", "reports", "evidence", "logs", "poc"):
+        (d / sub).mkdir(parents=True, exist_ok=True)
+    return d
+
+
+def repo_stats(repo: Path) -> dict:
+    files = [f for f in repo.rglob("*") if f.is_file() and ".git" not in f.parts]
+    return {"files": len(files),
+            "bytes": sum(f.stat().st_size for f in files),
+            "extensions": len({f.suffix.lower() for f in files if f.suffix})}
+
+
+def make_session(rps: float = 1.5, timeout: int = 25, ua: str = None) -> requests.Session:
+    s = requests.Session()
+    s.headers.update({
+        "User-Agent": ua or "bountyhunter/1.1",
+        "Accept": "application/json, text/html;q=0.9, */*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    })
+    retry = Retry(total=3, backoff_factor=0.7, read=3, connect=3,
+                  status_forcelist=(429, 500, 502, 503, 504),
+                  allowed_methods=frozenset({"GET", "POST"}),
+                  respect_retry_after_header=True)
+    adapter = HTTPAdapter(max_retries=retry, pool_maxsize=32)
+    s.mount("https://", adapter)
+    s.mount("http://", adapter)
+    s._bh_min_interval = 1.0 / max(rps, 0.05)
+    s._bh_last = 0.0
+    s._bh_timeout = timeout
+    return s
+
+
+def polite_get(session, url: str, **kw):
+    gap = session._bh_min_interval - (time.time() - session._bh_last)
+    if gap > 0:
+        time.sleep(gap)
+    kw.setdefault("timeout", session._bh_timeout)
+    r = session.get(url, **kw)
+    session._bh_last = time.time()
+    return r
+
+
+def polite_post(session, url: str, **kw):
+    gap = session._bh_min_interval - (time.time() - session._bh_last)
+    if gap > 0:
+        time.sleep(gap)
+    kw.setdefault("timeout", session._bh_timeout)
+    r = session.post(url, **kw)
+    session._bh_last = time.time()
+    return r
+
+
+def get_json(session, url, **kw):
+    try:
+        r = polite_get(session, url, **kw)
+        if r.status_code != 200:
+            return None, f"HTTP {r.status_code}"
+        return r.json(), None
+    except Exception as exc:
+        return None, f"{type(exc).__name__}: {exc}"
+
+
+def have_tool(name: str) -> bool:
+    return shutil.which(name) is not None
+
+
+def _prepare(cmd):
+    """Windows cannot exec .cmd/.bat through CreateProcess - resolve and wrap."""
+    if isinstance(cmd, str):
+        return cmd
+    argv = list(cmd)
+    if not argv:
+        return argv
+    exe = shutil.which(argv[0])
+    if exe:
+        argv[0] = exe
+        if os.name == "nt" and exe.lower().endswith((".cmd", ".bat")):
+            return ["cmd", "/c", *argv]
+    return argv
+
+
+def run_cmd(cmd, cwd=None, timeout=900, env=None) -> dict:
+    t0 = time.time()
+    try:
+        p = subprocess.run(_prepare(cmd), cwd=str(cwd) if cwd else None, timeout=timeout,
+                           env=env, capture_output=True, text=True, errors="replace")
+        return {"cmd": cmd if isinstance(cmd, str) else " ".join(map(str, cmd)),
+                "rc": p.returncode, "out": p.stdout or "", "err": p.stderr or "",
+                "dur": round(time.time() - t0, 2), "ok": p.returncode == 0}
+    except subprocess.TimeoutExpired:
+        return {"cmd": str(cmd), "rc": -9, "out": "", "err": f"timeout {timeout}s",
+                "dur": round(time.time() - t0, 2), "ok": False}
+    except FileNotFoundError:
+        return {"cmd": str(cmd), "rc": -2, "out": "", "err": "binary not found",
+                "dur": 0.0, "ok": False}
+    except Exception as exc:
+        return {"cmd": str(cmd), "rc": -1, "out": "", "err": str(exc),
+                "dur": round(time.time() - t0, 2), "ok": False}
+
+
+def setup_logging(verbose: bool = False) -> None:
+    logging.basicConfig(
+        level=logging.DEBUG if verbose else logging.INFO,
+        format="%(asctime)s %(levelname)-7s %(name)s: %(message)s",
+        datefmt="%H:%M:%S", stream=sys.stderr)
+    for noisy in ("urllib3", "requests", "charset_normalizer"):
+        logging.getLogger(noisy).setLevel(logging.WARNING)
+bh/clone.py
+python
+"""Repository acquisition.
+
+Full blobless clone - no sparse checkout - so cross-directory Solidity
+imports resolve. Re-running over an existing checkout updates in place
+instead of dying on 'destination path already exists'.
+"""
+from __future__ import annotations
+
+import os
+import shutil
+import subprocess
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+
+RETRIES = 3
+
+
+class CloneError(RuntimeError):
+    """Raised when a repository cannot be acquired."""
+
+
+def _run(argv, cwd=None):
+    """Resolve the executable and wrap .cmd/.bat - CreateProcess cannot exec them."""
+    exe = shutil.which(argv[0])
+    if exe:
+        argv = [exe, *argv[1:]]
+        if os.name == "nt" and exe.lower().endswith((".cmd", ".bat")):
+            argv = ["cmd", "/c", *argv]
+    return subprocess.run(
+        argv,
+        cwd=cwd,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+
+
+def _git(*args, cwd=None):
+    return _run(["git", *args], cwd=cwd)
+
+
+def _quarantine(dest: Path) -> None:
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    dest.rename(dest.with_name(f"{dest.name}.bak-{stamp}"))
+
+
+def _default_ref(dest: Path):
+    ref = _git(
+        "-C", str(dest), "symbolic-ref", "--quiet", "refs/remotes/origin/HEAD"
+    ).stdout.strip()
+    if ref:
+        return ref.replace("refs/remotes/", "")
+    for cand in ("origin/main", "origin/master"):
+        if _git("-C", str(dest), "rev-parse", "--verify", "--quiet", cand).returncode == 0:
+            return cand
+    out = _git(
+        "-C", str(dest), "for-each-ref", "--format=%(refname:short)",
+        "refs/remotes/origin",
+    ).stdout.split()
+    return out[0] if out else None
+
+
+def _bootstrap(dest: Path) -> None:
+    if (dest / "package.json").is_file() and not (dest / "node_modules").is_dir():
+        npm = shutil.which("npm")
+        if not npm:
+            print(f"WARN {dest.name}: package.json but no npm - build will fail")
+            return
+        print(f"installing npm deps for {dest.name} (one-time)")
+        r = _run([npm, "install", "--ignore-scripts", "--no-audit", "--no-fund"], cwd=dest)
+        if r.returncode != 0:
+            print(f"WARN {dest.name}: npm install rc={r.returncode}: {r.stderr.strip()[:300]}")
+    mods = dest / "node_modules"
+    if mods.is_dir():
+        maps = [
+            f"{s}/=node_modules/{s}/\n"
+            for s in ("@openzeppelin", "@uniswap", "@chainlink", "@balancer-labs",
+                      "@aave", "@curvefi", "@pendle", "@layerzerolabs")
+            if (mods / s).is_dir()
+        ]
+        if maps:
+            (dest / "remappings.txt").write_text("".join(maps), encoding="utf-8")
+    if not shutil.which("vyper"):
+        print(f"NOTE {dest.name}: vyper not on PATH - Vyper sources will not compile")
+
+
+def _update(dest: Path, branch=None) -> None:
+    _git("-C", str(dest), "config", "core.sparseCheckout", "false")
+    _git("-C", str(dest), "sparse-checkout", "disable")
+    f = _git("-C", str(dest), "fetch", "--all", "--prune", "--tags")
+    if f.returncode != 0:
+        print(f"WARN {dest.name}: fetch failed: {f.stderr.strip()[:200]}")
+    target = branch or _default_ref(dest)
+    if not target:
+        raise CloneError(f"{dest.name}: cannot resolve a default branch")
+    if not target.startswith("origin/"):
+        target = f"origin/{target}"
+    r = _git("-C", str(dest), "reset", "--hard", target)
+    if r.returncode != 0:
+        print(f"WARN {dest.name}: reset to {target} failed: {r.stderr.strip()[:200]}")
+        _git("-C", str(dest), "checkout", "-f", target)
+    _git("-C", str(dest), "clean", "-fdx")
+    if not any(dest.rglob("*.sol")):
+        print(f"WARN {dest.name}: no .sol files after update - checkout incomplete")
+
+
+def clone_repo(url: str, branch=None, dest=None) -> Path:
+    if dest is None:
+        dest, branch = branch, None
+    dest = Path(dest)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+
+    if dest.exists():
+        if (dest / ".git").is_dir():
+            _update(dest, branch)
+            _bootstrap(dest)
+            return dest
+        if any(dest.iterdir()):
+            _quarantine(dest)
+        else:
+            dest.rmdir()
+
+    args = ["clone", "--filter=blob:none"]
+    if branch:
+        args += ["--branch", branch]
+    args += [url, str(dest)]
+
+    last = None
+    for attempt in range(1, RETRIES + 1):
+        if dest.exists():
+            shutil.rmtree(dest, ignore_errors=True)
+        r = _git(*args)
+        if r.returncode == 0:
+            _bootstrap(dest)
+            return dest
+        last = r
+        time.sleep(2 * attempt)
+
+    detail = ((last.stderr or last.stdout) if last else "").strip()[:800]
+    raise CloneError(f"clone failed after {RETRIES} attempts: {url}\n{detail}")
+
+
+def sparse_clone(url: str, dest, paths=None) -> Path:
+    """Compat alias - sparse paths are filtered at scan time now."""
+    return clone_repo(url, None, dest)
+bh/audit/tools.py
+python
+from __future__ import annotations
+
+import json
+import tempfile
+from pathlib import Path
+
+from ..util import have_tool, log, run_cmd, short_hash
+
+SEV_MAP = {"critical": "critical", "high": "high", "error": "high", "warning": "medium",
+           "medium": "medium", "moderate": "medium", "low": "low", "info": "info",
+           "note": "low", "style": "info"}
+
+# these exit 1 to mean "findings found", not "crashed"
+FINDING_EXIT = {"bandit", "gosec", "njsscan", "npm-audit", "osv-scanner",
+                "gitleaks", "trufflehog"}
+
+
+def _norm(s):
+    return SEV_MAP.get(str(s or "").strip().lower(), "medium")
+
+
+def _f(title, sev, tool, **kw):
+    return {"title": title, "severity": _norm(sev), "confidence": kw.get("confidence", "medium"),
+            "category": kw.get("category", "sast"), "cwe": kw.get("cwe"), "file": kw.get("file"),
+            "line": kw.get("line"), "code": kw.get("code"), "detail": kw.get("detail", ""),
+            "remediation": kw.get("remediation", ""), "tool": tool,
+            "references": kw.get("references", []),
+            "fingerprint": short_hash(f"{tool}:{kw.get('file')}:{kw.get('line')}:{title}")}
+
+
+def _status(res, tool="", ok_extra=False):
+    if res["ok"] or ok_extra or (tool in FINDING_EXIT and res["rc"] == 1):
+        return "ok"
+    return f"rc={res['rc']}"
+
+
+def _meta(res, tool, ok_extra=False):
+    return {"tool": tool, "status": _status(res, tool, ok_extra), "dur": res["dur"],
+            "err": (res.get("err") or "")[:400]}
+
+
+def semgrep(repo: Path, cfg, rules_dir: Path):
+    if not have_tool("semgrep"):
+        return [], {"tool": "semgrep", "status": "missing"}
+    configs = ["--config", "auto"]
+    custom = Path(rules_dir) / "custom.yaml"
+    if cfg.audit.get("custom_rules", True) and custom.is_file():
+        configs += ["--config", str(custom)]
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    res = run_cmd(["semgrep", "--json", "--quiet", *configs,
+                   "--max-target-bytes", str(cfg.audit.get("max_file_bytes", 2_000_000)),
+                   "--output", out, "."], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1200)))
+    findings = []
+    try:
+        data = json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "{}")
+        for r in data.get("results", []):
+            extra = r.get("extra", {})
+            meta = extra.get("metadata", {})
+            findings.append(_f(r.get("check_id") or "semgrep",
+                               meta.get("impact") or extra.get("severity"), "semgrep",
+                               confidence=meta.get("confidence", "medium"),
+                               category=meta.get("category", "sast"),
+                               cwe=(meta.get("cwe") or [None])[0], file=r.get("path"),
+                               line=(r.get("start") or {}).get("line"), code=extra.get("lines"),
+                               detail=extra.get("message", ""),
+                               remediation=meta.get("fix") or "",
+                               references=meta.get("references") or []))
+    except Exception as exc:
+        log.warning("semgrep parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    return findings, _meta(res, "semgrep")
+
+
+def bandit(repo: Path, cfg):
+    if not have_tool("bandit"):
+        return [], {"tool": "bandit", "status": "missing"}
+    res = run_cmd(["bandit", "-r", ".", "-f", "json", "-q", "-x",
+                   ",".join(cfg.audit.get("exclude_dirs", []))], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1200)))
+    findings = []
+    try:
+        for r in json.loads(res["out"] or "{}").get("results", []):
+            findings.append(_f(r.get("test_name") or r.get("test_id"), r.get("issue_severity"),
+                               "bandit", confidence=(r.get("issue_confidence") or "medium").lower(),
+                               file=r.get("filename"), line=r.get("line_number"),
+                               code=r.get("code"), detail=r.get("issue_text"),
+                               remediation=r.get("more_info", "")))
+    except Exception as exc:
+        log.warning("bandit parse: %s", exc)
+    return findings, _meta(res, "bandit")
+
+
+def gosec(repo: Path, cfg):
+    if not have_tool("gosec") or not (repo / "go.mod").exists():
+        return [], {"tool": "gosec", "status": "missing/skipped"}
+    res = run_cmd(["gosec", "-fmt=json", "-quiet", "./..."], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for r in json.loads(res["out"] or "{}").get("Issues", []):
+            findings.append(_f(r.get("rule_id"), r.get("severity"), "gosec",
+                               file=r.get("file"), line=r.get("line"), code=r.get("code"),
+                               detail=r.get("details")))
+    except Exception as exc:
+        log.warning("gosec parse: %s", exc)
+    return findings, _meta(res, "gosec")
+
+
+def njsscan(repo: Path, cfg):
+    if not have_tool("njsscan"):
+        return [], {"tool": "njsscan", "status": "missing"}
+    res = run_cmd(["njsscan", "--json", "."], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for _, items in (json.loads(res["out"] or "{}").get("nodejs", {}) or {}).items():
+            for r in items.get("files", []):
+                for m in r.get("matches", []):
+                    findings.append(_f(m.get("type"), m.get("severity"), "njsscan",
+                                       file=r.get("file_path"), line=m.get("line"),
+                                       code=m.get("match"), detail=m.get("message")))
+    except Exception as exc:
+        log.warning("njsscan parse: %s", exc)
+    return findings, _meta(res, "njsscan")
+
+
+def osv_scanner(repo: Path, cfg):
+    if not have_tool("osv-scanner"):
+        return [], {"tool": "osv-scanner", "status": "missing"}
+    res = run_cmd(["osv-scanner", "--format", "json", "-r", "."], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for result in json.loads(res["out"] or "{}").get("results", []):
+            for pkg in result.get("packages", []):
+                p = pkg.get("package", {})
+                for v in pkg.get("vulnerabilities", []):
+                    findings.append(_f(f"{p.get('name')}: {v.get('summary') or v.get('id')}",
+                                       v.get("database_specific", {}).get("severity") or "high",
+                                       "osv-scanner", category="dependency",
+                                       file=result.get("source", {}).get("path"),
+                                       detail=(v.get("details") or "")[:1200],
+                                       references=v.get("references") or []))
+    except Exception as exc:
+        log.warning("osv parse: %s", exc)
+    return findings, _meta(res, "osv-scanner")
+
+
+def pip_audit(repo: Path, cfg):
+    if not have_tool("pip-audit") or not (repo / "requirements.txt").exists():
+        return [], {"tool": "pip-audit", "status": "missing/skipped"}
+    res = run_cmd(["pip-audit", "-r", "requirements.txt", "--format", "json"], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for dep in json.loads(res["out"] or "[]"):
+            for v in dep.get("vulns", []):
+                findings.append(_f(f"{dep.get('name')}: {v.get('id')}", "high", "pip-audit",
+                                   category="dependency", file="requirements.txt",
+                                   detail=" ".join(v.get("description", "").split())[:1200],
+                                   remediation=f"Upgrade to {v.get('fix_versions')}"))
+    except Exception as exc:
+        log.warning("pip-audit parse: %s", exc)
+    return findings, _meta(res, "pip-audit")
+
+
+def npm_audit(repo: Path, cfg):
+    if not have_tool("npm") or not (repo / "package.json").exists():
+        return [], {"tool": "npm-audit", "status": "missing/skipped"}
+    res = run_cmd(["npm", "audit", "--json", "--omit=dev"], cwd=repo, timeout=1200)
+    findings = []
+    try:
+        for name, adv in (json.loads(res["out"] or "{}").get("vulnerabilities") or {}).items():
+            for via in adv.get("via", []):
+                if isinstance(via, str):
+                    continue
+                findings.append(_f(f"{name}: {via.get('title')}", via.get("severity"), "npm-audit",
+                                   category="dependency", detail=via.get("url", ""),
+                                   references=[via["url"]] if via.get("url") else []))
+    except Exception as exc:
+        log.warning("npm audit parse: %s", exc)
+    return findings, _meta(res, "npm-audit")
+
+
+def trivy(repo: Path, cfg):
+    if not have_tool("trivy"):
+        return [], {"tool": "trivy", "status": "missing"}
+    res = run_cmd(["trivy", "fs", "--format", "json", "--quiet",
+                   "--scanners", "vuln,misconfig,secret", "."], cwd=repo, timeout=1800)
+    findings = []
+    try:
+        for target in json.loads(res["out"] or "{}").get("Results", []):
+            fp = target.get("Target")
+            for v in target.get("Vulnerabilities") or []:
+                findings.append(_f(f"{v.get('PkgName')}: {v.get('Title') or v.get('VulnerabilityID')}",
+                                   v.get("Severity"), "trivy", category="dependency", file=fp,
+                                   detail=v.get("Description", "")[:1200]))
+            for m in target.get("Misconfigurations") or []:
+                findings.append(_f(m.get("Title"), m.get("Severity"), "trivy",
+                                   category="misconfig", file=fp,
+                                   detail=m.get("Description", ""),
+                                   remediation=m.get("Resolution", "")))
+            for s in target.get("Secrets") or []:
+                findings.append(_f(f"Secret: {s.get('Title')}", s.get("Severity", "high"),
+                                   "trivy", category="secret", file=fp, line=s.get("StartLine")))
+    except Exception as exc:
+        log.warning("trivy parse: %s", exc)
+    return findings, _meta(res, "trivy")
+
+
+def gitleaks(repo: Path, cfg):
+    if not have_tool("gitleaks"):
+        return [], {"tool": "gitleaks", "status": "missing"}
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    res = run_cmd(["gitleaks", "detect", "--no-git", "--source", ".", "--report-format", "json",
+                   "--report-path", out, "--redact"], cwd=repo, timeout=1200)
+    if not Path(out).exists() or Path(out).stat().st_size == 0:
+        res = run_cmd(["gitleaks", "dir", ".", "-f", "json", "-r", out], cwd=repo, timeout=900)
+    findings = []
+    try:
+        for r in json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "[]"):
+            findings.append(_f(f"Secret: {r.get('RuleID')}", "high", "gitleaks",
+                               category="secret", file=r.get("File"), line=r.get("StartLine"),
+                               code=r.get("Match", "")[:400], detail=r.get("Description", "")))
+    except Exception as exc:
+        log.warning("gitleaks parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    return findings, _meta(res, "gitleaks")
+
+
+def trufflehog(repo: Path, cfg):
+    if not have_tool("trufflehog"):
+        return [], {"tool": "trufflehog", "status": "missing"}
+    res = run_cmd(["trufflehog", "filesystem", ".", "--json", "--no-update"], cwd=repo, timeout=1800)
+    findings = []
+    for line in (res["out"] or "").splitlines():
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        det = r.get("SourceMetadata", {}).get("Data", {}).get("Filesystem", {})
+        findings.append(_f(f"Secret: {r.get('DetectorName')}",
+                           "critical" if r.get("Verified") else "high", "trufflehog",
+                           category="secret", file=det.get("file"), line=det.get("line"),
+                           code=(r.get("Raw") or "")[:200]))
+    return findings, _meta(res, "trufflehog")
+
+
+RUNNERS = {"semgrep": semgrep, "bandit": bandit, "gosec": gosec, "njsscan": njsscan,
+           "osv_scanner": osv_scanner, "pip_audit": pip_audit, "npm_audit": npm_audit,
+           "trivy": trivy, "gitleaks": gitleaks, "trufflehog": trufflehog}
+bh/audit/solidity.py
+python
+from __future__ import annotations
+
+import json
+import tempfile
+from pathlib import Path
+
+from ..util import have_tool, log, run_cmd, short_hash
+
+SEV = {"critical": "critical", "high": "high", "medium": "medium", "low": "low",
+       "informational": "info", "info": "info", "optimization": "info"}
+
+_TOML = """[profile.default]
+auto_detect_solc = true
+src = "{src}"
+out = "out"
+libs = ["lib", "node_modules"]
+optimizer = true
+optimizer_runs = 200
+evm_version = "paris"
+"""
+
+
+def _norm(s):
+    return SEV.get(str(s or "").lower(), "medium")
+
+
+def _f(title, sev, tool, **kw):
+    return {"title": title, "severity": _norm(sev), "confidence": kw.get("confidence", "medium"),
+            "category": kw.get("category", "solidity"), "cwe": kw.get("cwe"),
+            "file": kw.get("file"), "line": kw.get("line"), "code": kw.get("code"),
+            "detail": kw.get("detail", ""), "remediation": kw.get("remediation", ""),
+            "tool": tool, "economic": kw.get("economic", 2), "references": kw.get("references", []),
+            "fingerprint": short_hash(f"{tool}:{kw.get('file')}:{kw.get('line')}:{title}")}
+
+
+def ensure_foundry_config(repo: Path) -> bool:
+    """Foundry projects ship foundry.toml. Hardhat/Truffle trees do not - bridge them
+    instead of letting forge default to a src/ directory that does not exist."""
+    if (repo / "foundry.toml").is_file():
+        return True
+    src = "contracts" if (repo / "contracts").is_dir() else "src"
+    if not (repo / src).is_dir():
+        return False
+    (repo / "lib").mkdir(exist_ok=True)
+    (repo / "foundry.toml").write_text(_TOML.format(src=src), encoding="utf-8")
+    log.info("wrote foundry.toml (src=%s) for %s", src, repo.name)
+    return True
+
+
+def _status(res, ok_extra=False):
+    if res["ok"] or ok_extra:
+        return "ok"
+    return f"rc={res['rc']}"
+
+
+def forge_build(repo: Path, cfg):
+    if not have_tool("forge"):
+        return [], {"tool": "forge-build", "status": "missing"}
+    if not ensure_foundry_config(repo):
+        return [], {"tool": "forge-build", "status": "no sources"}
+    if cfg.solidity.get("install_foundry_deps", True):
+        run_cmd(["forge", "install", "foundry-rs/forge-std", "--no-commit"], cwd=repo, timeout=900)
+    res = run_cmd(["forge", "build", "--sizes"], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1800)))
+    oversize = "exceeds the size limit" in (res["out"] + res["err"])
+    findings = []
+    if not res["ok"] and not oversize:
+        log.warning("forge build failed (%s):\n%s", repo.name,
+                    (res["err"] or res["out"])[:2000])
+        findings.append(_f("Compilation failure", "high", "forge-build", category="build",
+                           detail=(res["err"] or res["out"])[:1500], economic=1))
+    return findings, {"tool": "forge-build", "status": _status(res, oversize),
+                      "dur": res["dur"], "err": (res["err"] or "")[:400]}
+
+
+def slither(repo: Path, cfg):
+    if not have_tool("slither"):
+        return [], {"tool": "slither", "status": "missing"}
+    if not ensure_foundry_config(repo):
+        return [], {"tool": "slither", "status": "no sources"}
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    cmd = ["slither", ".", "--json", out,
+           "--filter-paths", "mocks|test|lib|interfaces|node_modules",
+           "--compile-force-framework", "foundry"]
+    if cfg.solidity.get("slither_detectors"):
+        cmd += ["--detect", cfg.solidity["slither_detectors"]]
+    res = run_cmd(cmd, cwd=repo, timeout=int(cfg.audit.get("tool_timeout", 2400)))
+    findings = []
+    try:
+        data = json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "{}")
+        for d in (data.get("results", {}) or {}).get("detectors", []):
+            el = (d.get("elements") or [{}])[0]
+            sm = el.get("source_mapping", {})
+            findings.append(_f(d.get("check", "slither"), d.get("impact"), "slither",
+                               confidence=(d.get("confidence") or "medium").lower(),
+                               cwe=(d.get("cwe") or "") or None,
+                               file=sm.get("filename_relative"),
+                               line=(sm.get("lines") or [None])[0],
+                               detail=d.get("description", "")[:1500]))
+    except Exception as exc:
+        log.warning("slither parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    if not res["ok"]:
+        log.warning("slither failed (%s):\n%s", repo.name, (res["err"] or res["out"])[:2000])
+    return findings, {"tool": "slither", "status": _status(res),
+                      "dur": res["dur"], "err": (res["err"] or "")[:400]}
+
+
+def aderyn(repo: Path, cfg):
+    if not have_tool("aderyn"):
+        return [], {"tool": "aderyn", "status": "missing"}
+    with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tf:
+        out = tf.name
+    res = run_cmd(["aderyn", "-o", out, "."], cwd=repo,
+                  timeout=int(cfg.audit.get("tool_timeout", 1800)))
+    findings = []
+    try:
+        data = json.loads(Path(out).read_text(encoding="utf-8", errors="replace") or "{}")
+        for d in (data.get("high_issues", {}).get("issues", [])
+                  + data.get("medium_issues", {}).get("issues", [])
+                  + data.get("low_issues", {}).get("issues", [])):
+            findings.append(_f(d.get("title", "aderyn"), d.get("severity"), "aderyn",
+                               file=d.get("contract_path"), line=d.get("line_no"),
+                               detail=d.get("description", "")[:1200],
+                               remediation=d.get("remediation", "")))
+    except Exception as exc:
+        log.warning("aderyn parse: %s", exc)
+    finally:
+        Path(out).unlink(missing_ok=True)
+    return findings, {"tool": "aderyn", "status": _status(res), "dur": res["dur"]}
+
+
+def mythril(repo: Path, cfg):
+    if not have_tool("myth"):
+        return [], {"tool": "mythril", "status": "missing"}
+    findings, dur, failed = [], 0.0, 0
+    for sol in list(repo.rglob("*.sol"))[:25]:
+        if any(p in {"mocks", "test", "lib", "node_modules"} for p in sol.parts):
+            continue
+        res = run_cmd(["myth", "analyze", str(sol), "-o", "json", "--execution-timeout", "120"],
+                      cwd=repo, timeout=400)
+        dur += res["dur"]
+        if not res["ok"]:
+            failed += 1
+        try:
+            for issue in json.loads(res["out"] or "{}").get("issues", []):
+                findings.append(_f(issue.get("title", "mythril"), issue.get("severity"), "mythril",
+                                   file=str(sol.relative_to(repo)),
+                                   detail=issue.get("description", "")[:900],
+                                   remediation=issue.get("remediation", "")))
+        except Exception:
+            continue
+    status = "ok" if failed == 0 else f"partial ({failed} files failed)"
+    return findings, {"tool": "mythril", "status": status, "dur": round(dur, 1)}
+
+
+def echidna(repo: Path, cfg):
+    if not have_tool("echidna"):
+        return [], {"tool": "echidna", "status": "missing"}
+    contracts = [p for p in repo.rglob("*.sol")
+                 if "test" in p.name.lower() and "lib" not in p.parts]
+    if not contracts:
+        return [], {"tool": "echidna", "status": "skipped: no property tests"}
+    res = run_cmd(["echidna", str(contracts[0]), "--contract", contracts[0].stem,
+                   "--test-limit", "50000"], cwd=repo, timeout=1800)
+    findings = [_f(f"Property violated: {l.strip()[:120]}", "high", "echidna",
+                   category="invariant", file=contracts[0].name, detail=l.strip(), economic=3)
+                for l in res["out"].splitlines() if "failed!" in l.lower()]
+    return findings, {"tool": "echidna", "status": _status(res), "dur": res["dur"]}
+
+
+RUNNERS = {"slither": slither, "aderyn": aderyn, "mythril": mythril,
+           "forge_build": forge_build, "echidna": echidna}
+bh/cli.py
+python
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+import traceback
+from pathlib import Path
+
+from rich.console import Console
+from rich.table import Table
+
+from . import links
+from .audit import run_audit
+from .clone import CloneError, clone_repo
+from .config import Config
+from .db import DB
+from .discover import run_discovery
+from .docs_hunt import hunt
+from .intel import detect_stack, find_prior_audits, first_deployment_address, gather
+from .poc import generate
+from .report import write_index, write_reports
+from .target import intake, save_scope
+from .util import (BANNER, make_session, project_dir, repo_stats, resolve_workspace,
+                   setup_logging, slugify)
+
+console = Console()
+RULES_DIR = Path(__file__).resolve().parent.parent / "rules"
+
+
+def _ctx(args):
+    cfg = Config.load(args.config)
+    setup_logging(args.verbose)
+    workspace = resolve_workspace(cfg)
+    return cfg, workspace, DB(workspace / "bountyhunter.db"), make_session(
+        cfg.rate_limit_rps, cfg.request_timeout, cfg.user_agent)
+
+
+def _resolve(db, ident: str):
+    p = db.get_project(ident)
+    if not p:
+        console.print(f"[red]no project matching[/] {ident!r}")
+        sys.exit(2)
+    return p
+
+
+def _tool_table(name: str, tools_report: list) -> Table:
+    t = Table(title=f"{name} - tool status")
+    t.add_column("tool")
+    t.add_column("status")
+    for t_ in tools_report:
+        st = str(t_.get("status", "?"))
+        colour = "green" if st == "ok" else "red" if ("missing" in st or "rc=" in st or "crash" in st) else "yellow"
+        t.add_row(str(t_.get("tool", "?")), f"[{colour}]{st}[/]")
+    return t
+
+
+def _dead_tools(tools_report: list) -> list:
+    """Only real failures. bandit/gitleaks/npm exit 1 to mean 'found something'."""
+    return [t_.get("tool") for t_ in tools_report
+            if str(t_.get("status", "")).startswith(("rc=", "crash", "no sources"))]
+
+
+def cmd_discover(args):
+    cfg, workspace, db, session = _ctx(args)
+    for kw in (args.keyword or cfg.keywords):
+        console.print(f"[cyan]discovering[/] {kw}")
+        r = run_discovery(cfg, db, session, kw, use_x=not args.no_x)
+        for src, status in r["sources"].items():
+            console.print(f"  {src}: {status}")
+    out = workspace / "discovery-links.md"
+    out.write_text("\n".join(f"- [{l['label']}]({l['url']})" for l in db.links()), encoding="utf-8")
+    console.print(f"[green]links ->[/] {out}")
+
+
+def cmd_links(args):
+    cfg, workspace, db, _ = _ctx(args)
+    out = workspace / f"links-{slugify(args.keyword)}.md"
+    out.write_text("\n".join(f"- [{l['label']}]({l['url']})"
+                             for l in links.for_keyword(args.keyword)), encoding="utf-8")
+    console.print(f"[green]->[/] {out}")
+
+
+def cmd_list(args):
+    cfg, workspace, db, _ = _ctx(args)
+    rows = db.list_projects(args.status)
+    t = Table(title=f"{len(rows)} projects")
+    for c in ("ID", "Platform", "Name", "Repo", "Status"):
+        t.add_column(c, overflow="fold")
+    for p in rows:
+        t.add_row(str(p["id"]), p["platform"], (p["name"] or p["slug"])[:52],
+                  (p["repo_url"] or "-")[:52], p["status"])
+    console.print(t)
+
+
+def cmd_show(args):
+    cfg, workspace, db, session = _ctx(args)
+    p = _resolve(db, args.id)
+    intel = gather(cfg, session, p, workspace)
+    console.print_json(json.dumps({**dict(p), "intel": intel}, indent=2, default=str))
+    if intel["repo_url"]:
+        db.upsert_project(p["platform"], p["slug"], repo_url=intel["repo_url"], status="intel")
+
+
+def cmd_clone(args):
+    cfg, workspace, db, session = _ctx(args)
+    p = _resolve(db, args.id)
+    if not p["repo_url"]:
+        intel = gather(cfg, session, p, workspace)
+        if not intel["repo_url"]:
+            console.print("[red]no repo resolvable[/]")
+            sys.exit(1)
+        db.upsert_project(p["platform"], p["slug"], repo_url=intel["repo_url"])
+        p = db.get_project(args.id)
+    dest = project_dir(workspace, p["platform"], p["slug"]) / "repo" / "src"
+    try:
+        clone_repo(p["repo_url"], None, dest)
+    except CloneError as exc:
+        console.print(f"[red]{exc}[/]")
+        sys.exit(1)
+    db.upsert_project(p["platform"], p["slug"], local_path=str(dest), status="cloned")
+    console.print(f"[green]cloned ->[/] {dest}")
+
+
+def cmd_audit(args):
+    cfg, workspace, db, _ = _ctx(args)
+    p = _resolve(db, args.id)
+    pdir = project_dir(workspace, p["platform"], p["slug"])
+    repo = Path(p["local_path"]) if p["local_path"] else pdir / "repo"
+    if not repo.exists():
+        console.print("[red]no local repo - run `bh clone` first[/]")
+        sys.exit(1)
+    stats = repo_stats(repo)
+    db.upsert_project(p["platform"], p["slug"], stack=detect_stack(repo), status="auditing")
+    audit = run_audit(cfg, repo, RULES_DIR, solidity_mode=bool(list(repo.rglob("*.sol"))))
+    console.print(_tool_table(repo.name, audit["tools"]))
+    dead = _dead_tools(audit["tools"])
+    if dead:
+        console.print(f"[yellow]{', '.join(dead)} failed - findings may be incomplete[/]")
+    for f in audit["findings"]:
+        db.add_finding(p["id"], f)
+    for t in audit["tools"]:
+        db.add_run(p["id"], t.get("tool", "?"), t.get("status", "?"))
+    for path in write_reports(p, audit, cfg, pdir, stats):
+        console.print(f"[green]report ->[/] {path}")
+    db.set_status(p["id"], "audited")
+    console.print(f"{len(audit['findings'])} findings")
+
+
+def cmd_target(args):
+    cfg, workspace, db, session = _ctx(args)
+    console.print(f"[cyan]intake[/] {args.url}")
+    pid, scope = intake(cfg, db, session, args.url)
+
+    t = Table(title="parsed scope")
+    t.add_column("field")
+    t.add_column("value", overflow="fold")
+    for r in scope["repos"]:
+        t.add_row("repo", r["url"])
+        for p_ in r["paths"]:
+            t.add_row("", f"  path: {p_}")
+        if not r["paths"]:
+            t.add_row("", "  (whole repository)")
+    t.add_row("ladder", "\n".join(f"{s['severity']}: ${s['max_reward']:,}"
+                                  for s in scope["severity_table"]) or "-")
+    t.add_row("contacts", ", ".join(scope["contacts"]) or "-")
+    t.add_row("exclusions", str(len(scope["exclusions"])))
+    console.print(t)
+
+    p = db.get_project(str(pid))
+    pdir = project_dir(workspace, p["platform"], p["slug"])
+    console.print(f"[green]scope ->[/] {save_scope(pdir, scope)}")
+    if not args.go:
+        console.print("\n[dim]re-run with --go to clone and audit[/]")
+        return
+
+    if not os.environ.get(cfg.solidity.get("fork_rpc_env", "ETH_RPC_URL")):
+        console.print("[yellow]ETH_RPC_URL unset - PoC scaffolds will not fork[/]")
+
+    root = pdir / "repo"
+    findings, cloned, failed = [], [], []
+    repo_paths: dict = {}
+    for r in scope["repos"]:
+        name = r["url"].rstrip("/").split("/")[-1].removesuffix(".git")
+        dest = root / name
+        try:
+            clone_repo(r["url"], r["branch"], dest)
+            cloned.append(dest)
+            repo_paths[dest] = r["paths"]
+        except CloneError as exc:
+            console.print(f"[red]{name}: {exc}[/]")
+            failed.append(name)
+
+    prior: list = []
+    for dest in cloned:
+        prior += find_prior_audits(dest)
+    if prior:
+        scope["existing_audits"] = prior
+        console.print(f"[yellow]{len(prior)} prior audit file(s) in repo - read these first[/]")
+        for a in prior[:8]:
+            console.print(f"  [dim]{a}[/]")
+
+    all_tools: list = []
+    for dest in cloned:
+        stats = repo_stats(dest)
+        console.print(f"[cyan]auditing[/] {dest.name} ({stats['files']} files)")
+        res = run_audit(cfg, dest, RULES_DIR, solidity_mode=True,
+                        scope_paths=repo_paths.get(dest) or None)
+        console.print(_tool_table(dest.name, res["tools"]))
+        all_tools.extend(res["tools"])
+        for t_ in res["tools"]:
+            db.add_run(pid, t_.get("tool", "?"), t_.get("status", "?"))
+        dead = _dead_tools(res["tools"])
+        if dead:
+            console.print(f"[red]{dest.name}: {', '.join(dead)} failed - tree not compiled[/]")
+            failed.append(dest.name)
+            continue
+        for f in res["findings"]:
+            f["file"] = f"{dest.name}/{f.get('file') or ''}"
+        findings.extend(res["findings"])
+
+    findings.sort(key=lambda x: -x["cvss"])
+    for f in findings:
+        db.add_finding(pid, f)
+
+    counts = {s: 0 for s in ("critical", "high", "medium", "low", "info")}
+    for f in findings:
+        counts[f["severity"]] += 1
+    audit = {"findings": findings, "counts": counts, "tools": all_tools}
+
+    for path in write_reports(p, audit, cfg, pdir, {"files": 0, "bytes": 0}, scope):
+        console.print(f"[green]report ->[/] {path}")
+
+    if failed:
+        console.print(f"\n[red]{len(failed)} of {len(cloned) + len(failed)} repos failed "
+                      f"- see the warnings above[/]")
+
+    if cfg.poc.get("enabled", True) and findings:
+        fallback = None
+        for dest in cloned:
+            fallback = first_deployment_address(dest)
+            if fallback:
+                break
+        for path in generate(pdir, findings, scope, fallback,
+                             repo=cloned[0] if cloned else None):
+            console.print(f"[green]poc ->[/] {path}")
+
+    db.set_status(pid, "error" if not findings else "audited")
+
+    if counts["critical"] or counts["high"]:
+        console.print(f"\n[yellow]critical {counts['critical']} / high {counts['high']} "
+                      f"- validate against the live target before writing up[/]")
+
+    if not findings:
+        sys.exit(1)
+
+
+def cmd_docs(args):
+    cfg, workspace, db, session = _ctx(args)
+    res = hunt(cfg, db, session, use_defillama=not args.no_defillama,
+               use_gitbook=not args.no_gitbook, use_dorks=not args.no_dorks,
+               extra_hosts=args.host or [], limit=args.limit)
+    console.print(f"probed {res['hosts_probed']} -> [green]{res['stored']} programs[/]")
+    for src, status in res["sources"].items():
+        console.print(f"  {src}: {status}")
+
+
+def cmd_run(args):
+    cfg, workspace, db, session = _ctx(args)
+    for kw in (args.keyword or cfg.keywords):
+        run_discovery(cfg, db, session, kw, use_x=not args.no_x)
+    for p in db.list_projects("discovered")[: args.limit]:
+        try:
+            intel = gather(cfg, session, p, workspace)
+            if not intel["repo_url"]:
+                db.set_status(p["id"], "no-repo")
+                continue
+            db.upsert_project(p["platform"], p["slug"], repo_url=intel["repo_url"], status="intel")
+            dest = project_dir(workspace, p["platform"], p["slug"]) / "repo" / "src"
+            repo = clone_repo(intel["repo_url"], None, dest)
+            stats = repo_stats(repo)
+            db.upsert_project(p["platform"], p["slug"], local_path=str(repo),
+                              stack=detect_stack(repo), status="auditing")
+            audit = run_audit(cfg, repo, RULES_DIR, solidity_mode=bool(list(repo.rglob("*.sol"))))
+            console.print(_tool_table(repo.name, audit["tools"]))
+            dead = _dead_tools(audit["tools"])
+            if dead:
+                console.print(f"[yellow]{p['slug']}: {', '.join(dead)} failed[/]")
+            for f in audit["findings"]:
+                db.add_finding(p["id"], f)
+            for path in write_reports(db.get_project(p["id"]), audit, cfg,
+                                      project_dir(workspace, p["platform"], p["slug"]), stats):
+                console.print(f"[green]{p['slug']} ->[/] {path}")
+            db.set_status(p["id"], "audited")
+        except Exception as exc:
+            db.add_run(p["id"], "pipeline", "error", str(exc))
+            db.set_status(p["id"], "error")
+            console.print(f"[red]{p['slug']}: {exc}[/]")
+            if args.verbose:
+                traceback.print_exc()
+    console.print(f"[green]index ->[/] {write_index(workspace, db)}")
+
+
+def build_parser():
+    ap = argparse.ArgumentParser(prog="bh")
+    ap.add_argument("--config", default="config.yaml")
+    ap.add_argument("-v", "--verbose", action="store_true")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    p = sub.add_parser("target", help="intake a bounty URL, then clone + audit")
+    p.add_argument("url")
+    p.add_argument("--go", action="store_true")
+    p.set_defaults(func=cmd_target)
+
+    p = sub.add_parser("discover")
+    p.add_argument("-k", "--keyword", action="append")
+    p.add_argument("--no-x", action="store_true")
+    p.set_defaults(func=cmd_discover)
+
+    p = sub.add_parser("docs")
+    p.add_argument("--host", action="append")
+    p.add_argument("--limit", type=int, default=200)
+    p.add_argument("--no-defillama", action="store_true")
+    p.add_argument("--no-gitbook", action="store_true")
+    p.add_argument("--no-dorks", action="store_true")
+    p.set_defaults(func=cmd_docs)
+
+    p = sub.add_parser("links")
+    p.add_argument("keyword")
+    p.set_defaults(func=cmd_links)
+
+    p = sub.add_parser("list")
+    p.add_argument("--status")
+    p.set_defaults(func=cmd_list)
+
+    p = sub.add_parser("show")
+    p.add_argument("id")
+    p.set_defaults(func=cmd_show)
+
+    p = sub.add_parser("clone")
+    p.add_argument("id")
+    p.set_defaults(func=cmd_clone)
+
+    p = sub.add_parser("audit")
+    p.add_argument("id")
+    p.set_defaults(func=cmd_audit)
+
+    p = sub.add_parser("run")
+    p.add_argument("-k", "--keyword", action="append")
+    p.add_argument("--limit", type=int, default=10)
+    p.add_argument("--no-x", action="store_true")
+    p.set_defaults(func=cmd_run)
+    return ap
+
+
+def main(argv=None):
+    console.print(f"[bold cyan]{BANNER}[/]")
+    args = build_parser().parse_args(argv)
+    try:
+        args.func(args)
+    except KeyboardInterrupt:
+        console.print("\n[yellow]interrupted[/]")
+        sys.exit(130)
+bh/audit/triage.py, bh/poc.py, verify.py and config.yaml stay exactly as in my previous message — unchanged by this round.
+
+Then:
+
+rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+python bh.py -v target https://docs.aladdin.club/security-bounty --go
+Watch for npm install printing a warning, and for a forge build failed block. Paste that block if the build still dies — with node_modules present it should now be a genuine import or pragma error in their tree.
+
+now here since last 3-4 minutes
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python bh.py -v target https://docs.aladdin.club/security-bounty --go
+
+| |__ ___ _ _ _ __ | || |__ _ _ _ __ | | ___ _ __
+| '_ \ / _ | | | | '_ | | ' | | | | ' | / _ \ '|
+| |) | () | || | | | | || | | | || | | | | || __/ |
+|./ _/ _,|| ||_|| ||_,|| ||____|_|
+
+intake https://docs.aladdin.club/security-bounty
+parsed scope
+┌────────────┬─────────────────────────────────────────────────────────┐
+│ field │ value │
+├────────────┼─────────────────────────────────────────────────────────┤
+│ repo │ https://github.com/AladdinDAO/aladdin-v3-contracts.git │
+│ │ path: contracts/concentrator │
+│ │ path: contracts/clever │
+│ │ path: contracts/f(x) │
+│ repo │ https://github.com/AladdinDAO/fx-protocol-contracts.git │
+│ │ (whole repository) │
+│ repo │ https://github.com/AladdinDAO/aladdin-v2-contracts.git │
+│ │ path: contracts/stake │
+│ │ path: contracts/token │
+│ ladder │ critical: $500,000 │
+│ │ high: $20,000 │
+│ │ medium: $10,000 │
+│ │ low: $2,000 │
+│ contacts │ security@aladdin.club │
+│ exclusions │ 4 │
+└────────────┴─────────────────────────────────────────────────────────┘
+scope -> D:\BugBounty\target\docs.aladdin.club-security-bounty\scope.json
+installing npm deps for aladdin-v3-contracts (one-time)
+
+Worked for 6s · 1 step
+
+Thought for 6s
+It's hanging at npm install. 3-4 minutes. That's expected-ish: npm install on a hardhat repo with many deps can take a few minutes. But it's silent because we capture output.
+
+Also note: --recurse-submodules is in config but clone.py never uses it — actually Aladdin repos may have submodules (lib/forge-std etc.). clone.py doesn't pass --recurse-submodules. Worth noting.
+
+Also: _bootstrap is called on every clone_repo — including after _update. Fine.
+
+Is it hanging or just slow? 3-4 minutes for npm install of a big hardhat repo (with @uniswap, @chainlink deps) is plausible. But capture_output means no progress.
+
+Also concern: npm install could hang on network. Let me tell them: wait, and how to verify it's progressing — check node_modules size in another window.
+
+Give them a parallel command to monitor:
+
+dir /s D:\BugBounty\target\docs.aladdin.club-security-bounty\repo\aladdin-v3-contracts\node_modules
+or check process.
+
+Also there's a real issue: --ignore-scripts good. But npm install without a timeout in _bootstrap — no timeout → can hang forever. Should add timeout.
+
+Also the bigger point: we don't need npm install at all. The repos likely vendor deps or use git submodules. Actually a better approach: skip npm install entirely and let forge fail with real errors; or use npm ci. But node_modules IS needed for @openzeppelin imports.
+
+Let me give them: wait up to ~5 more min; meanwhile monitor. And give a patch: add timeout + progress print + --no-progress false? Actually to see progress, don't capture output.
+
+Best immediate action: add a timeout (e.g., 600s) and stream output so it isn't a black box.
+
+Let me give a targeted fix to _bootstrap — full function replacement (they want full code, but it's a function; earlier they wanted full files... this is mid-run so give function replacement and say where).
+
+Actually they asked "now here since last 3-4 minutes" — they want to know if it's stuck. Answer first, then fix.
+
+Let me be concise:
+
+It's not stuck necessarily — npm install is slow and silent because output is captured.
+Check progress in a second terminal.
+If node_modules is growing, wait.
+Meanwhile, harden: add timeout and stream output.
+Let me also note: 3-4 min is on the long side for a repo that size; if no growth, npm is retrying network.
+
+Give the monitor commands.
+
+Also mention: the run has no timeout on _bootstrap, so it can hang indefinitely — that's a genuine bug.
+
+Let me write short.
+
+Monitor command:
+
+dir D:\BugBounty\target\docs.aladdin.club-security-bounty\repo\aladdin-v3-contracts\node_modules | find /c "bytes"
+Better: check for a growing folder or use powershell (Get-ChildItem -Recurse ... | Measure-Object Length -Sum).Sum.
+
+Simple:
+
+powershell -c "Get-ChildItem -Recurse -File 'D:\BugBounty\target\docs.aladdin.club-security-bounty\repo\aladdin-v3-contracts\node_modules' | Measure-Object Length -Sum | % Sum"
+Run twice, compare.
+
+Also check npm process:
+
+tasklist | findstr node
+If no node process → it died/hung.
+
+Now the fix. Replace _bootstrap with streaming + timeout. Since _run captures, add a variant.
+
+I'll give a full _bootstrap replacement plus note.
+
+Let me write.
+
+Done
+
+Not necessarily stuck — npm install on a Hardhat repo with @uniswap/@chainlink deps pulls hundreds of packages and can genuinely take 5-10 minutes on a cold cache. It looks frozen because _run captures stdout, so npm's progress bar is swallowed.
+
+Check whether it's actually progressing — second terminal, run twice ~20s apart and compare the number:
+
+powershell -c "(Get-ChildItem -Recurse -File 'D:\BugBounty\target\docs.aladdin.club-security-bounty\repo\aladdin-v3-contracts\node_modules' -EA 0 | Measure-Object Length -Sum).Sum"
+And confirm the process exists:
+
+tasklist | findstr /i node
+Size climbing, node.exe present → it's working, leave it. First install is the slow one; the other two repos reuse the npm cache and will be much faster.
+Size flat and no node.exe → it hung or died silently, kill the run with Ctrl+C.
+Real bug here: _bootstrap has no timeout, so a stalled npm hangs the whole pipeline forever. Fix it now so the next run can't do this.
+
+Replace the _run function and _bootstrap in bh/clone.py with these two:
+
+python
+def _run(argv, cwd=None, timeout=900, stream=False):
+    """Resolve the executable and wrap .cmd/.bat - CreateProcess cannot exec them."""
+    exe = shutil.which(argv[0])
+    if exe:
+        argv = [exe, *argv[1:]]
+        if os.name == "nt" and exe.lower().endswith((".cmd", ".bat")):
+            argv = ["cmd", "/c", *argv]
+    kw = dict(cwd=cwd, text=True, encoding="utf-8", errors="replace")
+    if stream:
+        return subprocess.run(argv, timeout=timeout, **kw)
+    return subprocess.run(argv, capture_output=True, timeout=timeout, **kw)
+
+
+def _bootstrap(dest: Path) -> None:
+    if (dest / "package.json").is_file() and not (dest / "node_modules").is_dir():
+        npm = shutil.which("npm")
+        if not npm:
+            print(f"WARN {dest.name}: package.json but no npm - build will fail")
+            return
+        print(f"installing npm deps for {dest.name} (one-time, may take several minutes)")
+        try:
+            r = _run([npm, "install", "--ignore-scripts", "--no-audit", "--no-fund",
+                      "--no-progress"], cwd=dest, timeout=900, stream=True)
+            if r.returncode != 0:
+                print(f"WARN {dest.name}: npm install rc={r.returncode} - imports may not resolve")
+        except subprocess.TimeoutExpired:
+            print(f"WARN {dest.name}: npm install timed out after 900s - continuing without deps")
+    mods = dest / "node_modules"
+    if mods.is_dir():
+        maps = [
+            f"{s}/=node_modules/{s}/\n"
+            for s in ("@openzeppelin", "@uniswap", "@chainlink", "@balancer-labs",
+                      "@aave", "@curvefi", "@pendle", "@layerzerolabs")
+            if (mods / s).is_dir()
+        ]
+        if maps:
+            (dest / "remappings.txt").write_text("".join(maps), encoding="utf-8")
+    if not shutil.which("vyper"):
+        print(f"NOTE {dest.name}: vyper not on PATH - Vyper sources will not compile")
+With stream=True npm writes straight to your console, so you can see it working instead of guessing.
+
+One thing to expect once it finishes: if the build still fails on forge-std or a lib/ import, the repos use git submodules and clone.py never passes --recurse-submodules even though config.yaml has recurse_submodules: true. Tell me if that shows up and I'll wire it in.
+
+
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+python: can't open file 'D:\\GCD Stock Scanner\\Excel Based Trading System\\Excel based trading\\finvasia\\Version_v3 with python source code\\Telegram Mini Apps Hacks\\Tools\\rmdir': [Errno 2] No such file or directory
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python verify.py
+toolchain
+---------
+  OK    git
+  OK    python
+  OK    forge
+  OK    slither
+  MISS  aderyn
+  MISS  myth
+  MISS  echidna
+  OK    semgrep
+  OK    bandit
+  MISS  gitleaks
+  MISS  trivy
+  MISS  osv-scanner
+  MISS  trufflehog
+
+python modules
+--------------
+  OK    requests
+  OK    yaml
+  OK    rich
+  OK    bs4
+
+environment
+-----------
+  ETH_RPC_URL  set
+  package import  OK
+
+foundry toolchain
+-----------------
+  solc            OK
+  config helper   OK
+  rules/custom.yaml OK
+
+Degraded (audits still run): aderyn, myth, echidna, gitleaks, trivy, osv-scanner, trufflehog
+
+Ready.
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python bh.py target https://docs.aladdin.club/security-bounty --go
+
+ | |__   ___  _   _ _ __ | |_| |__  _   _ _ __ | |_ ___ _ __
+ | '_ \ / _ \| | | | '_ \| __| '_ \| | | | '_ \| __/ _ \ '__|
+ | |_) | (_) | |_| | | | | |_| | | | |_| | | | | ||  __/ |
+ |_.__/ \___/ \__,_|_| |_|\__|_| |_|\__,_|_| |_|\__\___|_|
+
+intake https://docs.aladdin.club/security-bounty
+                              parsed scope
+┌────────────┬─────────────────────────────────────────────────────────┐
+│ field      │ value                                                   │
+├────────────┼─────────────────────────────────────────────────────────┤
+│ repo       │ https://github.com/AladdinDAO/aladdin-v3-contracts.git  │
+│            │   path: contracts/concentrator                          │
+│            │   path: contracts/clever                                │
+│            │   path: contracts/f(x)                                  │
+│ repo       │ https://github.com/AladdinDAO/fx-protocol-contracts.git │
+│            │   (whole repository)                                    │
+│ repo       │ https://github.com/AladdinDAO/aladdin-v2-contracts.git  │
+│            │   path: contracts/stake                                 │
+│            │   path: contracts/token                                 │
+│ ladder     │ critical: $500,000                                      │
+│            │ high: $20,000                                           │
+│            │ medium: $10,000                                         │
+│            │ low: $2,000                                             │
+│ contacts   │ security@aladdin.club                                   │
+│ exclusions │ 4                                                       │
+└────────────┴─────────────────────────────────────────────────────────┘
+scope -> D:\BugBounty\target\docs.aladdin.club-security-bounty\scope.json
+42 prior audit file(s) in repo - read these first
+  audit-reports\AladdinETH_Report_v1.0_2022_12_22.pdf
+  audit-reports\fx_btcUSD_Report_v1.0_2024_04_19.pdf
+  audit-reports\PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf
+  audit-reports\PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf
+  audit-reports\SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf
+  audit-reports\SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf
+  audit-reports\SECBIT_Aladdin_Stakedao_Migration_Report_v1.0_2026_06_30.pdf
+  audit-reports\SECBIT_AladdinCVX_v1.0_20221209.pdf
+auditing aladdin-v3-contracts (977 files)
+17:45:34 INFO    bh: npm_audit -> 0 (rc=-2)
+17:45:34 INFO    bh: pip_audit -> 0 (missing/skipped)
+17:45:34 INFO    bh: gitleaks -> 0 (missing)
+17:45:34 INFO    bh: trivy -> 0 (missing)
+17:45:34 INFO    bh: trufflehog -> 0 (missing)
+17:45:34 INFO    bh: osv_scanner -> 0 (missing)
+17:45:34 INFO    bh: gosec -> 0 (missing/skipped)
+17:45:34 INFO    bh: njsscan -> 0 (missing)
+17:45:34 INFO    bh: echidna -> 0 (missing)
+17:45:34 INFO    bh: wrote foundry.toml (src=contracts) for aladdin-v3-contracts
+17:45:34 INFO    bh: aderyn -> 0 (missing)
+17:45:34 INFO    bh: mythril -> 0 (missing)
+17:45:37 INFO    bh: bandit -> 11 (rc=1)
+17:45:56 INFO    bh: forge_build -> 1 (rc=1)
+17:45:56 INFO    bh: slither -> 0 (rc=1)
+17:46:34 INFO    bh: semgrep -> 115 (ok)
+17:46:35 INFO    bh: custom rules: 0 hits
+17:46:35 INFO    bh: custom rules -> 0
+17:46:37 INFO    bh: defi rules -> 386
+aladdin-v3-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool         │ status          │
+├──────────────┼─────────────────┤
+│ npm-audit    │ rc=-2           │
+│ pip-audit    │ missing/skipped │
+│ gitleaks     │ missing         │
+│ trivy        │ missing         │
+│ trufflehog   │ missing         │
+│ osv-scanner  │ missing         │
+│ gosec        │ missing/skipped │
+│ njsscan      │ missing         │
+│ echidna      │ missing         │
+│ aderyn       │ missing         │
+│ mythril      │ missing         │
+│ bandit       │ rc=1            │
+│ forge-build  │ rc=1            │
+│ slither      │ rc=1            │
+│ semgrep      │ ok              │
+│ custom-rules │ ok              │
+│ defi-rules   │ ok              │
+└──────────────┴─────────────────┘
+aladdin-v3-contracts: npm-audit, bandit, forge-build, slither failed - tree not compiled
+auditing fx-protocol-contracts (367 files)
+17:46:38 INFO    bh: npm_audit -> 0 (rc=-2)
+17:46:38 INFO    bh: trufflehog -> 0 (missing)
+17:46:38 INFO    bh: gitleaks -> 0 (missing)
+17:46:38 INFO    bh: trivy -> 0 (missing)
+17:46:38 INFO    bh: pip_audit -> 0 (missing/skipped)
+17:46:38 INFO    bh: njsscan -> 0 (missing)
+17:46:38 INFO    bh: gosec -> 0 (missing/skipped)
+17:46:38 INFO    bh: osv_scanner -> 0 (missing)
+17:46:38 INFO    bh: echidna -> 0 (missing)
+17:46:38 INFO    bh: aderyn -> 0 (missing)
+17:46:38 INFO    bh: mythril -> 0 (missing)
+17:46:40 INFO    bh: bandit -> 11 (rc=1)
+17:46:51 INFO    bh: slither -> 0 (rc=1)
+17:46:51 INFO    bh: forge_build -> 1 (rc=1)
+17:47:15 INFO    bh: semgrep -> 25 (ok)
+17:47:15 INFO    bh: custom rules: 0 hits
+17:47:15 INFO    bh: custom rules -> 0
+17:47:16 INFO    bh: defi rules -> 166
+   fx-protocol-contracts - tool
+              status
+┌──────────────┬─────────────────┐
+│ tool         │ status          │
+├──────────────┼─────────────────┤
+│ npm-audit    │ rc=-2           │
+│ trufflehog   │ missing         │
+│ gitleaks     │ missing         │
+│ trivy        │ missing         │
+│ pip-audit    │ missing/skipped │
+│ njsscan      │ missing         │
+│ gosec        │ missing/skipped │
+│ osv-scanner  │ missing         │
+│ echidna      │ missing         │
+│ aderyn       │ missing         │
+│ mythril      │ missing         │
+│ bandit       │ rc=1            │
+│ slither      │ rc=1            │
+│ forge-build  │ rc=1            │
+│ semgrep      │ ok              │
+│ custom-rules │ ok              │
+│ defi-rules   │ ok              │
+└──────────────┴─────────────────┘
+fx-protocol-contracts: npm-audit, bandit, slither, forge-build failed - tree not compiled
+auditing aladdin-v2-contracts (142 files)
+17:47:16 INFO    bh: npm_audit -> 0 (rc=-2)
+17:47:16 INFO    bh: gitleaks -> 0 (missing)
+17:47:16 INFO    bh: trivy -> 0 (missing)
+17:47:16 INFO    bh: pip_audit -> 0 (missing/skipped)
+17:47:16 INFO    bh: trufflehog -> 0 (missing)
+17:47:16 INFO    bh: njsscan -> 0 (missing)
+17:47:16 INFO    bh: osv_scanner -> 0 (missing)
+17:47:16 INFO    bh: gosec -> 0 (missing/skipped)
+17:47:16 INFO    bh: echidna -> 0 (missing)
+17:47:16 INFO    bh: wrote foundry.toml (src=contracts) for aladdin-v2-contracts
+17:47:16 INFO    bh: mythril -> 0 (missing)
+17:47:16 INFO    bh: aderyn -> 0 (missing)
+17:47:19 INFO    bh: bandit -> 11 (rc=1)
+17:47:24 INFO    bh: forge_build -> 1 (rc=1)
+17:47:25 INFO    bh: slither -> 0 (rc=1)
+17:47:39 INFO    bh: semgrep -> 3 (ok)
+17:47:39 INFO    bh: custom rules: 0 hits
+17:47:39 INFO    bh: custom rules -> 0
+17:47:39 INFO    bh: defi rules -> 63
+aladdin-v2-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool         │ status          │
+├──────────────┼─────────────────┤
+│ npm-audit    │ rc=-2           │
+│ gitleaks     │ missing         │
+│ trivy        │ missing         │
+│ pip-audit    │ missing/skipped │
+│ trufflehog   │ missing         │
+│ njsscan      │ missing         │
+│ osv-scanner  │ missing         │
+│ gosec        │ missing/skipped │
+│ echidna      │ missing         │
+│ mythril      │ missing         │
+│ aderyn       │ missing         │
+│ bandit       │ rc=1            │
+│ forge-build  │ rc=1            │
+│ slither      │ rc=1            │
+│ semgrep      │ ok              │
+│ custom-rules │ ok              │
+│ defi-rules   │ ok              │
+└──────────────┴─────────────────┘
+aladdin-v2-contracts: npm-audit, bandit, forge-build, slither failed - tree not compiled
+
+no findings - 3 of 6 repos failed
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>rmdir /s /q D:\BugBounty\target\docs.aladdin.club-security-bounty\repo
+
+D:\GCD Stock Scanner\Excel Based Trading System\Excel based trading\finvasia\Version_v3 with python source code\Telegram Mini Apps Hacks\Tools>python bh.py -v target https://docs.aladdin.club/security-bounty --go
+
+ | |__   ___  _   _ _ __ | |_| |__  _   _ _ __ | |_ ___ _ __
+ | '_ \ / _ \| | | | '_ \| __| '_ \| | | | '_ \| __/ _ \ '__|
+ | |_) | (_) | |_| | | | | |_| | | | |_| | | | | ||  __/ |
+ |_.__/ \___/ \__,_|_| |_|\__|_| |_|\__,_|_| |_|\__\___|_|
+
+intake https://docs.aladdin.club/security-bounty
+                              parsed scope
+┌────────────┬─────────────────────────────────────────────────────────┐
+│ field      │ value                                                   │
+├────────────┼─────────────────────────────────────────────────────────┤
+│ repo       │ https://github.com/AladdinDAO/aladdin-v3-contracts.git  │
+│            │   path: contracts/concentrator                          │
+│            │   path: contracts/clever                                │
+│            │   path: contracts/f(x)                                  │
+│ repo       │ https://github.com/AladdinDAO/fx-protocol-contracts.git │
+│            │   (whole repository)                                    │
+│ repo       │ https://github.com/AladdinDAO/aladdin-v2-contracts.git  │
+│            │   path: contracts/stake                                 │
+│            │   path: contracts/token                                 │
+│ ladder     │ critical: $500,000                                      │
+│            │ high: $20,000                                           │
+│            │ medium: $10,000                                         │
+│            │ low: $2,000                                             │
+│ contacts   │ security@aladdin.club                                   │
+│ exclusions │ 4                                                       │
+└────────────┴─────────────────────────────────────────────────────────┘
+scope -> D:\BugBounty\target\docs.aladdin.club-security-bounty\scope.json
+installing npm deps for aladdin-v3-contracts (one-time)
+installing npm deps for fx-protocol-contracts (one-time)
+installing npm deps for aladdin-v2-contracts (one-time)
+42 prior audit file(s) in repo - read these first
+  audit-reports\AladdinETH_Report_v1.0_2022_12_22.pdf
+  audit-reports\fx_btcUSD_Report_v1.0_2024_04_19.pdf
+  audit-reports\PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf
+  audit-reports\PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf
+  audit-reports\SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf
+  audit-reports\SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf
+  audit-reports\SECBIT_Aladdin_Stakedao_Migration_Report_v1.0_2026_06_30.pdf
+  audit-reports\SECBIT_AladdinCVX_v1.0_20221209.pdf
+auditing aladdin-v3-contracts (70635 files)
+18:19:30 INFO    bh: pip_audit -> 0 (missing/skipped)
+18:19:30 INFO    bh: trufflehog -> 0 (missing)
+18:19:30 INFO    bh: trivy -> 0 (missing)
+18:19:30 INFO    bh: gitleaks -> 0 (missing)
+18:19:30 INFO    bh: gosec -> 0 (missing/skipped)
+18:19:30 INFO    bh: osv_scanner -> 0 (missing)
+18:19:30 INFO    bh: njsscan -> 0 (missing)
+18:19:30 INFO    bh: aderyn -> 0 (missing)
+18:19:30 INFO    bh: mythril -> 0 (missing)
+18:19:30 INFO    bh: wrote foundry.toml (src=contracts) for aladdin-v3-contracts
+18:19:30 INFO    bh: wrote foundry.toml (src=contracts) for aladdin-v3-contracts
+18:19:30 INFO    bh: echidna -> 0 (missing)
+18:19:55 INFO    bh: npm_audit -> 2 (ok)
+18:20:06 INFO    bh: bandit -> 0 (ok)
+18:20:34 WARNING bh: forge build failed (aladdin-v3-contracts):
+Error: Encountered invalid compiler version in contracts\misc\GaugeFactory.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\FeeDistributor.vy: No compiler version exists that matches the version requirement: ^0.2.7
+Encountered invalid compiler version in contracts\voting-escrow\TokenMinter.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\VotingEscrow.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\gauges\GaugeController.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\gauges\liquidity\LiquidityGaugeV3.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\gauges\vefunder\FundraisingGaugeCLever.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\gauges\vefunder\FundraisingGaugeFactoryV1.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\gauges\vefunder\FundraisingGaugeFx.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\gauges\vefunder\FundraisingGaugeV1.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\tokens\ERC20CLEV.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler version in contracts\voting-escrow\tokens\ERC20CTR.vy: No compiler version exists that matches the version requirement: ^0.3.1
+Encountered invalid compiler
+18:20:34 INFO    bh: forge_build -> 1 (rc=1)
+18:20:34 WARNING bh: slither failed (aladdin-v3-contracts):
+Traceback (most recent call last):
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\Scripts\slither.EXE\__main__.py", line 5, in <module>
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 815, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 936, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 100, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 870, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 279, in __init__
+    self._compile(**kwargs)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 725, in _compile
+    self._platform.compile(self, **kwargs)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\foundry.py", line 145, in compile
+    hardhat_like_parsing(
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\hardhat.py", line 53, in hardhat_like_parsing
+    raise InvalidCompilation(txt)
+crytic_compile.platform.exceptions.InvalidCompilation: Compilation failed. Can you run build
+18:20:34 INFO    bh: slither -> 0 (rc=1)
+18:21:35 INFO    bh: semgrep -> 114 (ok)
+18:22:09 INFO    bh: custom rules: 0 hits
+18:22:09 INFO    bh: custom rules -> 0
+18:22:18 INFO    bh: defi rules -> 386
+aladdin-v3-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool         │ status          │
+├──────────────┼─────────────────┤
+│ pip-audit    │ missing/skipped │
+│ trufflehog   │ missing         │
+│ trivy        │ missing         │
+│ gitleaks     │ missing         │
+│ gosec        │ missing/skipped │
+│ osv-scanner  │ missing         │
+│ njsscan      │ missing         │
+│ aderyn       │ missing         │
+│ mythril      │ missing         │
+│ echidna      │ missing         │
+│ npm-audit    │ ok              │
+│ bandit       │ ok              │
+│ forge-build  │ rc=1            │
+│ slither      │ rc=1            │
+│ semgrep      │ ok              │
+│ custom-rules │ ok              │
+│ defi-rules   │ ok              │
+└──────────────┴─────────────────┘
+aladdin-v3-contracts: forge-build, slither failed - tree not compiled
+auditing fx-protocol-contracts (19757 files)
+18:22:45 INFO    bh: pip_audit -> 0 (missing/skipped)
+18:22:45 INFO    bh: trivy -> 0 (missing)
+18:22:45 INFO    bh: trufflehog -> 0 (missing)
+18:22:45 INFO    bh: gitleaks -> 0 (missing)
+18:22:45 INFO    bh: gosec -> 0 (missing/skipped)
+18:22:45 INFO    bh: osv_scanner -> 0 (missing)
+18:22:45 INFO    bh: aderyn -> 0 (missing)
+18:22:45 INFO    bh: njsscan -> 0 (missing)
+18:22:45 INFO    bh: mythril -> 0 (missing)
+18:22:45 INFO    bh: echidna -> 0 (missing)
+18:22:58 INFO    bh: bandit -> 30 (ok)
+18:23:00 INFO    bh: npm_audit -> 0 (ok)
+18:23:24 WARNING bh: slither failed (fx-protocol-contracts):
+Traceback (most recent call last):
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\Scripts\slither.EXE\__main__.py", line 5, in <module>
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 815, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 936, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 100, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 870, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 279, in __init__
+    self._compile(**kwargs)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 725, in _compile
+    self._platform.compile(self, **kwargs)
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\foundry.py", line 145, in compile
+    hardhat_like_parsing(
+  File "C:\Users\Abdul\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\hardhat.py", line 53, in hardhat_like_parsing
+    raise InvalidCompilation(txt)
+crytic_compile.platform.exceptions.InvalidCompilation: Compilation failed. Can you run build
+18:23:24 INFO    bh: slither -> 0 (rc=1)
+18:24:20 INFO    bh: semgrep -> 25 (ok)
+18:25:55 INFO    bh: forge_build -> 0 (ok)
+18:26:04 INFO    bh: custom rules: 0 hits
+18:26:04 INFO    bh: custom rules -> 0
+18:26:07 INFO    bh: defi rules -> 166
+   fx-protocol-contracts - tool
+              status
+┌──────────────┬─────────────────┐
+│ tool         │ status          │
+├──────────────┼─────────────────┤
+│ pip-audit    │ missing/skipped │
+│ trivy        │ missing         │
+│ trufflehog   │ missing         │
+│ gitleaks     │ missing         │
+│ gosec        │ missing/skipped │
+│ osv-scanner  │ missing         │
+│ aderyn       │ missing         │
+│ njsscan      │ missing         │
+│ mythril      │ missing         │
+│ echidna      │ missing         │
+│ bandit       │ ok              │
+│ npm-audit    │ ok              │
+│ slither      │ rc=1            │
+│ semgrep      │ ok              │
+│ forge-build  │ ok              │
+│ custom-rules │ ok              │
+│ defi-rules   │ ok              │
+└──────────────┴─────────────────┘
+fx-protocol-contracts: slither failed - tree not compiled
+auditing aladdin-v2-contracts (54535 files)
+18:26:50 INFO    bh: trivy -> 0 (missing)
+18:26:50 INFO    bh: pip_audit -> 0 (missing/skipped)
+18:26:50 INFO    bh: trufflehog -> 0 (missing)
+18:26:50 INFO    bh: gitleaks -> 0 (missing)
+18:26:50 INFO    bh: gosec -> 0 (missing/skipped)
+18:26:50 INFO    bh: osv_scanner -> 0 (missing)
+18:26:50 INFO    bh: njsscan -> 0 (missing)
+18:26:50 INFO    bh: aderyn -> 0 (missing)
+18:26:50 INFO    bh: mythril -> 0 (missing)
+18:26:50 INFO    bh: wrote foundry.toml (src=contracts) for aladdin-v2-contracts
+18:26:50 INFO    bh: echidna -> 0 (missing)
+18:27:17 INFO    bh: bandit -> 0 (ok)
+18:27:17 INFO    bh: npm_audit -> 0 (ok)
+18:27:42 INFO    bh: forge_build -> 0 (ok)
+18:28:08 INFO    bh: semgrep -> 3 (ok)
+18:28:09 WARNING bh: slither failed (aladdin-v2-contracts):
+
+Detector: unchecked-transfer
+WrappedXALD.wrap(uint256) (contracts/token/WrappedXALD.sol#23-29) ignores return value by xALD.transferFrom(msg.sender,address(this),_xALDAmount) (contracts/token/WrappedXALD.sol#26-27)
+WrappedXALD.unwrap(uint256) (contracts/token/WrappedXALD.sol#36-42) ignores return value by xALD.transfer(msg.sender,xALDAmount) (contracts/token/WrappedXALD.sol#41-42)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-transfer
+
+Detector: uninitialized-state
+RewardBondDepositor.accountEpochShares (contracts/bond/RewardBondDepositor.sol#79-82) is never initialized. It is used in:
+        - RewardBondDepositor._userCheckpoint(address,address) (contracts/bond/RewardBondDepositor.sol#288-362)
+        - RewardBondDepositor._getRecordedAccountRewardShareSince(uint256,address,address,uint256[]) (contracts/bond/RewardBondDepositor.sol#370-409)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Detector: divide-before-multiply
+POLExecutor._swapToLP(address,address,uint256) (contracts/POLExecutor.sol#247-281) performs a multiplication on the result of a division:
+        - swapAmount = Babylonian.sqrt(rIn.mul(amount.mul(3988000).add(rIn.mul(3988009)))).sub(rIn.mul(1997)) / 1994 (contracts/POLExecutor.sol#269-271)
+        - amountWithFee = swapAmount.mul(997) (contracts/POLExecutor.sol#271-272)
+Staking._redeemRewardBondLocksByVault(address,address,uint256,uint256) (contracts/stake/Staking.sol#514-556) performs a multiplication on the result of a division:
+        - _amount = _amount.mul(_shares[i]).div(_totalShare) (contracts/stake/Staking.sol#538)
+        - unlockedAmount = unlockedAmount.add(_amount.mul(_right - _left).div(_unlockBlock - _lockedBlock)) (contracts/stake/Staking.sol#547-549)
+Staking._getRedeemableRewardBondByVault(address,address,uint256,uint256) (contracts/stake/Staking.sol#654-691) performs a multiplication on the result of a division:
+        - _amount = _amount.mul(_shares[i]).div(_totalShare) (contracts/sta
+18:28:09 INFO    bh: slither -> 0 (rc=4294967295)
+18:28:34 INFO    bh: custom rules: 0 hits
+18:28:34 INFO    bh: custom rules -> 0
+18:28:39 INFO    bh: defi rules -> 63
+aladdin-v2-contracts - tool status
+┌──────────────┬─────────────────┐
+│ tool         │ status          │
+├──────────────┼─────────────────┤
+│ trivy        │ missing         │
+│ pip-audit    │ missing/skipped │
+│ trufflehog   │ missing         │
+│ gitleaks     │ missing         │
+│ gosec        │ missing/skipped │
+│ osv-scanner  │ missing         │
+│ njsscan      │ missing         │
+│ aderyn       │ missing         │
+│ mythril      │ missing         │
+│ echidna      │ missing         │
+│ bandit       │ ok              │
+│ npm-audit    │ ok              │
+│ forge-build  │ ok              │
+│ semgrep      │ ok              │
+│ slither      │ rc=4294967295   │
+│ custom-rules │ ok              │
+│ defi-rules   │ ok              │
+└──────────────┴─────────────────┘
+aladdin-v2-contracts: slither failed - tree not compiled
+report -> D:\BugBounty\target\docs.aladdin.club-security-bounty\reports\audit-20261115T125840Z.md
+report -> D:\BugBounty\target\docs.aladdin.club-security-bounty\reports\audit-20261115T125840Z.json
+report -> D:\BugBounty\target\docs.aladdin.club-security-bounty\reports\audit-20261115T125840Z.html
+
+3 of 6 repos failed - see the warnings above
+

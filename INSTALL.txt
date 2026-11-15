@@ -1,0 +1,48 @@
+v1.1.0 - WHAT CHANGED
+=====================
+
+Four defects found in review of v1.0.0, all fixed:
+
+1. sparse checkout broke solc imports. In-scope contracts import from
+   out-of-scope dirs (contracts/interfaces, contracts/common, lib), so
+   forge/slither/aderyn/mythril/echidna all produced zero. Now a full
+   blobless clone; scope is filtered at report time instead.
+
+2. Tool status was invisible. "slither -> 0" could mean clean or missing.
+   A status table now prints per repo.
+
+3. One rule owned the finding list (9 of 10 highs were the same rule).
+   Capped at 2 hits per rule per file.
+
+4. Scope paths were passed with a repo-name prefix while findings were
+   repo-relative, so the filter never matched. Fixed.
+
+Also added: deployments/ address discovery for PoC scaffolds, slither
+--compile-force-framework, audit-reports/ auto-detection, verify.py.
+
+QUICK START
+===========
+1. Extract so you get D:\tools\bountyhunter\
+2. cd D:\tools\bountyhunter
+3. python -m venv .venv
+4. .\.venv\Scripts\Activate.ps1
+5. .\setup.ps1
+6. python verify.py            <- check toolchain before anything else
+7. $env:ETH_RPC_URL = "https://eth-mainnet.g.alchemy.com/v2/alch_ReFATk6MgZlYFKGceoi4q"
+8. python bh.py target https://docs.aladdin.club/security-bounty
+9. python bh.py target https://docs.aladdin.club/security-bounty --go
+
+SUCCESS LOOKS LIKE
+==================
+  INFO bh: cloned aladdin-v3-contracts
+  INFO bh: defi rules -> N        (N > 0)
+  <tool status table with forge_build green>
+  <severity table>
+
+If it still prints "sparse checkout", sparse.py did not save.
+If forge_build shows rc=1, paste the compile error.
+
+BEFORE TRIAGING
+===============
+List <repo>/audit-reports/ and read the newest PDF. Prior audits make
+most slither hits duplicates and therefore ineligible.

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+bountyhunter.db*
+out/
+cache/
+lib/
+.env
+*.log
