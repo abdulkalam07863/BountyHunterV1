@@ -1,0 +1,30 @@
+rules:
+  - id: bh-ssrf-unvalidated
+    languages: [python]
+    severity: WARNING
+    message: Outbound request to a non-literal URL - confirm host allow-listing.
+    patterns:
+      - pattern-regex: 'requests\.(get|post|request)\(\s*[a-z_]+'
+    metadata:
+      category: security
+      cwe: ["CWE-918"]
+
+  - id: bh-hardcoded-bearer
+    languages: [generic]
+    severity: ERROR
+    message: Hardcoded bearer/authorization token.
+    patterns:
+      - pattern-regex: '(?i)authorization\s*[:=]\s*["'']?Bearer\s+[A-Za-z0-9._\-]{20,}'
+    metadata:
+      category: security
+      cwe: ["CWE-798"]
+
+  - id: bh-todo-security
+    languages: [generic]
+    severity: INFO
+    message: Security-relevant TODO left in code.
+    patterns:
+      - pattern-regex: '(?i)(TODO|FIXME)[^\n]{0,80}(auth|secur|valid|sanit)'
+    metadata:
+      category: security
+      cwe: ["CWE-1059"]
